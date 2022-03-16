@@ -1,0 +1,945 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Wed Mar 16 00:12:45 2022
+| Host         : AsusP8 running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_2_wrapper_drc_routed.rpt -pb design_2_wrapper_drc_routed.pb -rpx design_2_wrapper_drc_routed.rpx
+| Design       : design_2_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 178
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CHECK-3     | Warning  | Report rule limit reached                                   | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 125        |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 2          |
+| RBOR-1      | Warning  | RAMB output registers                                       | 28         |
+| REQP-1839   | Warning  | RAMB36 async control check                                  | 20         |
+| REQP-181    | Advisory | writefirst                                                  | 2          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/CLK_DIV_CNTR/mux_out is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/CLK_DIV_CNTR/Q_reg_i_2/O, cell design_2_i/BiDirChannels_0/inst/X1/CLK_DIV_CNTR/Q_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[3]_0 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/m00_axis_tvalid_INST_0_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/m00_axis_tvalid_INST_0_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_0 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[0]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_1 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[1]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_10 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[10]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_11 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[11]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_12 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[12]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_13 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[13]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_14 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[14]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_15 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[15]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_16 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[16]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_17 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[17]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_18 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[18]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_19 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[19]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_2 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[2]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_20 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[20]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_21 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[21]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_22 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[22]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_23 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[23]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_24 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[24]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_25 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[25]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_26 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[26]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_27 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[27]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_28 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[28]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_29 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[29]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_3 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[3]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_30 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[30]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_31 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[31]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[31]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_32 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[0]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[0]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_33 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[1]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[1]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_34 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[2]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[2]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_35 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[3]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[3]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_36 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[4]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[4]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_37 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[5]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[5]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_38 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[6]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[6]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_39 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[7]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[7]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_4 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[4]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_40 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[8]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[8]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_41 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[9]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[9]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_42 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[10]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[10]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_43 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[11]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[11]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_44 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[12]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[12]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_45 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[13]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[13]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_46 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[14]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[14]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_47 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[15]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[15]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_48 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[16]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[16]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_49 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[17]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[17]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_5 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[5]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_50 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[18]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[18]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_51 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[19]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[19]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_52 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[20]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[20]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_53 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[21]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[21]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_54 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[22]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[22]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_55 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[23]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[23]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_56 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[24]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[24]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_57 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[25]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[25]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_58 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[26]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[26]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_59 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[27]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[27]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_6 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[6]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_60 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[28]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[28]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_61 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[29]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[29]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_62 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[30]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[30]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_63 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[31]_LDC_i_1__0/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[31]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_64 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[0]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[0]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_65 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[1]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[1]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_66 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[2]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[2]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_67 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[3]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[3]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_68 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[4]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[4]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_69 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[5]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[5]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_7 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[7]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_70 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[6]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[6]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_71 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[7]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[7]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_72 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[8]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[8]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_73 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[9]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[9]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_74 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[10]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[10]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_75 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[11]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[11]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_76 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[12]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[12]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_77 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[13]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[13]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_78 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[14]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[14]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_79 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[15]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[15]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_8 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[8]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_80 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[16]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[16]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_81 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[17]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[17]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_82 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[18]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[18]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_83 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[19]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[19]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_84 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[20]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[20]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_85 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[21]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[21]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_86 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[22]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[22]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_87 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[23]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[23]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_88 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[24]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[24]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#91 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_89 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[25]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[25]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#92 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_9 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[9]_LDC_i_1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#93 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_90 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[26]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[26]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#94 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_91 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[27]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[27]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#95 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_92 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[28]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[28]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#96 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_93 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[29]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[29]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#97 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_94 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[30]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[30]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#98 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X0/X0/s00_axi_aresetn_95 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[31]_LDC_i_1__1/O, cell design_2_i/BiDirChannels_0/inst/X1/X0/X0/r_reg_reg[31]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#99 Warning
+Gated clock check  
+Net design_2_i/BiDirChannels_0/inst/X1/X1/X1/Q_reg_0 is a gated clock net sourced by a combinational pin design_2_i/BiDirChannels_0/inst/X1/X1/X1/m00_axis_tvalid_INST_0/O, cell design_2_i/BiDirChannels_0/inst/X1/X1/X1/m00_axis_tvalid_INST_0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#100 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/CLOCKDIV/ff3/CLK is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/CLOCKDIV/ff3/FSM_onehot_state_reg[4]_i_2/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/CLOCKDIV/ff3/FSM_onehot_state_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#101 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_24 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[23]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#102 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_25 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[22]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#103 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_26 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[21]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#104 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_27 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[20]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#105 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_28 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[19]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#106 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_29 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[18]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#107 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_30 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[17]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#108 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_31 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[16]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#109 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_32 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[15]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#110 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_33 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[14]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#111 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_34 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[13]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#112 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_35 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[12]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#113 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_36 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[11]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#114 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_37 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[10]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#115 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_38 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[9]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#116 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_39 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[8]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#117 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_40 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[7]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#118 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_41 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[6]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#119 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_42 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[5]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#120 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_43 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[4]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#121 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_44 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[3]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#122 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_45 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[2]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#123 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_46 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[1]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#124 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_47 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[0]_LDC_i_1/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#125 Warning
+Gated clock check  
+Net design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/s00_axi_aresetn_48 is a gated clock net sourced by a combinational pin design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[4]_LDC_i_1__0/O, cell design_2_i/SPI_ip_0/inst/SPI_ip_v1_0_S00_AXI_inst/user_SPI_Block/FSM/r_reg_reg[4]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/m00_axis_tvalid_INST_0_i_1 is driving clock pin of 2 cells. This could lead to large hold time violations. Involved cells are:
+design_2_i/BiDirChannels_0/inst/X1/MASK_HSCK/ff0/Q_reg
+design_2_i/BiDirChannels_0/inst/X1/MASK_HSCK/ff1/Q_reg
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT design_2_i/BiDirChannels_0/inst/X1/X1/X1/m00_axis_tvalid_INST_0 is driving clock pin of 12 cells. This could lead to large hold time violations. Involved cells are:
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[0],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[10],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[11],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[1],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[2],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[3],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[4],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[5],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[6],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[7],
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[8]
+design_2_i/BiDirChannels_0/inst/X1/LAST_CNTR/r_reg_reg[9]
+Related violations: <none>
+
+RBOR-1#1 Warning
+RAMB output registers  
+RAMB design_2_i/RxFIFO/inst/mem_reg_0 output DOB (9) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#2 Warning
+RAMB output registers  
+RAMB design_2_i/RxFIFO/inst/mem_reg_1 output DOB (9) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#3 Warning
+RAMB output registers  
+RAMB design_2_i/RxFIFO/inst/mem_reg_2 output DOB (9) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#4 Warning
+RAMB output registers  
+RAMB design_2_i/RxFIFO/inst/mem_reg_3 output DOB (6) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#5 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_1_0 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#6 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_1_1 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#7 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_1_2 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#8 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_1_3 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#9 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_1_4 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#10 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_1_5 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#11 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_1_6 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#12 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_1_7 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#13 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_2_0 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#14 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_2_1 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#15 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_2_2 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#16 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_2_3 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#17 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_2_4 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#18 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_2_5 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#19 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_2_6 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#20 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_2_7 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#21 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_3_0 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#22 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_3_1 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#23 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_3_2 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#24 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_3_3 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#25 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_3_4 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#26 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_3_5 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#27 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_3_6 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+RBOR-1#28 Warning
+RAMB output registers  
+RAMB design_2_i/axis_stream_txfifo_0/inst/mem_reg_3_7 output DOB (4) is connected to asynchronous registers, if you use synchronous controls you will get better results both in area and delay (RAMB has synchronous registers built in).
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/MASK_HSCK/ff0/Q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/X1/X0/Q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_0 has an input control pin design_2_i/RxFIFO/inst/mem_reg_0/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/X1/X1/Q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/MASK_HSCK/ff0/Q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/X1/X0/Q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_1 has an input control pin design_2_i/RxFIFO/inst/mem_reg_1/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/X1/X1/Q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_2 has an input control pin design_2_i/RxFIFO/inst/mem_reg_2/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 design_2_i/RxFIFO/inst/mem_reg_2 has an input control pin design_2_i/RxFIFO/inst/mem_reg_2/ENARDEN (net: design_2_i/RxFIFO/inst/s00_axis_tvalid) which is driven by a register (design_2_i/BiDirChannels_0/inst/X1/PULSE_CNTR/r_reg_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_2_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_2_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

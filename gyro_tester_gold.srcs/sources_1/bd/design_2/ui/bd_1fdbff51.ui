@@ -1,0 +1,89 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.485329",
+   "Default View_TopLeft":"-115,-97",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "PinnedPorts":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2290 -y 500 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2290 -y 520 -defaultsOSRD
+preplace port port-id_SPI_MISO -pg 1 -lvl 0 -x 0 -y 910 -defaultsOSRD
+preplace port port-id_SPI_MOSI -pg 1 -lvl 7 -x 2290 -y 780 -defaultsOSRD
+preplace port port-id_SPI_SCK -pg 1 -lvl 7 -x 2290 -y 800 -defaultsOSRD
+preplace port port-id_SPI_CS -pg 1 -lvl 7 -x 2290 -y 820 -defaultsOSRD
+preplace port port-id_LED1 -pg 1 -lvl 7 -x 2290 -y 840 -defaultsOSRD
+preplace port port-id_LED2 -pg 1 -lvl 7 -x 2290 -y 860 -defaultsOSRD
+preplace port port-id_HSICK -pg 1 -lvl 7 -x 2290 -y 250 -defaultsOSRD
+preplace port port-id_MCK_P -pg 1 -lvl 7 -x 2290 -y 270 -defaultsOSRD
+preplace port port-id_MCK_N -pg 1 -lvl 7 -x 2290 -y 290 -defaultsOSRD
+preplace port port-id_HSI_A0 -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_HSI_A1 -pg 1 -lvl 0 -x 0 -y 40 -defaultsOSRD
+preplace port port-id_HSI_DAP -pg 1 -lvl 7 -x 2290 -y 210 -defaultsOSRD
+preplace port port-id_HSI_DAM -pg 1 -lvl 7 -x 2290 -y 190 -defaultsOSRD
+preplace port port-id_HSI_DBM -pg 1 -lvl 7 -x 2290 -y 150 -defaultsOSRD
+preplace port port-id_HSI_DBP -pg 1 -lvl 7 -x 2290 -y 170 -defaultsOSRD
+preplace port port-id_HSI_DC -pg 1 -lvl 7 -x 2290 -y 230 -defaultsOSRD
+preplace port port-id_SYNC_CK -pg 1 -lvl 7 -x 2290 -y 310 -defaultsOSRD
+preplace inst SPI_ip_0 -pg 1 -lvl 6 -x 2030 -y 820 -defaultsOSRD
+preplace inst RxFIFO -pg 1 -lvl 3 -x 860 -y 780 -defaultsOSRD
+preplace inst BiDirChannels_0 -pg 1 -lvl 6 -x 2030 -y 220 -defaultsOSRD
+preplace inst axis_stream_txfifo_0 -pg 1 -lvl 5 -x 1580 -y 220 -defaultsOSRD
+preplace inst Switch_Fabric -pg 1 -lvl 2 -x 530 -y 620 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -x 1190 -y 780 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1580 -y 550 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 5 -x 1580 -y 750 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 2030 -y 580 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 200 -y 470 -defaultsOSRD
+preplace netloc BiDirChannels_0_HSI_DAM 1 6 1 NJ 190
+preplace netloc BiDirChannels_0_HSI_DAP 1 6 1 NJ 210
+preplace netloc BiDirChannels_0_HSI_DBM 1 6 1 NJ 150
+preplace netloc BiDirChannels_0_HSI_DBP 1 6 1 NJ 170
+preplace netloc BiDirChannels_0_HSI_DC 1 6 1 NJ 230
+preplace netloc BiDirChannels_0_HS_Clock 1 6 1 NJ 250
+preplace netloc BiDirChannels_0_MCK_N 1 6 1 NJ 290
+preplace netloc BiDirChannels_0_MCK_P 1 6 1 NJ 270
+preplace netloc BiDirChannels_0_SYNCK 1 6 1 NJ 310
+preplace netloc HSI_A0_1 1 0 6 NJ 20 NJ 20 NJ 20 NJ 20 NJ 20 1790J
+preplace netloc HSI_A1_1 1 0 6 NJ 40 NJ 40 NJ 40 NJ 40 1360J 30 1760J
+preplace netloc SPI_MISO_1 1 0 6 NJ 910 NJ 910 NJ 910 NJ 910 NJ 910 1800J
+preplace netloc SPI_ip_0_FSM_DONE 1 6 1 NJ 860
+preplace netloc SPI_ip_0_FSM_START 1 6 1 NJ 840
+preplace netloc SPI_ip_0_SPI_CS 1 6 1 NJ 820
+preplace netloc SPI_ip_0_SPI_MOSI 1 6 1 NJ 780
+preplace netloc SPI_ip_0_SPI_SCK 1 6 1 NJ 800
+preplace netloc axi_dma_0_mm2s_introut 1 4 1 1430 510n
+preplace netloc axi_dma_0_s2mm_introut 1 4 1 1440 530n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 30 570 380 860 700 640 1020 640 1420 440 1760 720 2260
+preplace netloc xlconcat_0_dout 1 5 1 1720 550n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 20 370 NJ 370 NJ 370 NJ 370 1410J 420 1780J 430 2270
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 370 480n
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 5 370 870 710 650 1000 650 1370 410 1790
+preplace netloc BiDirChannels_0_M00_AXIS 1 2 5 720 10 NJ 10 NJ 10 NJ 10 2270
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 4 1 1390 110n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 4 1 N 730
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 N 750
+preplace netloc axi_dma_0_M_AXI_SG 1 4 1 N 710
+preplace netloc axi_smc_M00_AXI 1 5 1 1730 560n
+preplace netloc axis_stream_fifo_0_M00_AXIS 1 3 1 1010 740n
+preplace netloc axis_stream_txfifo_0_M00_AXIS 1 5 1 1720 90n
+preplace netloc axis_stream_txfifo_0_M01_AXIS 1 5 1 1740 110n
+preplace netloc axis_stream_txfifo_0_M02_AXIS 1 5 1 1750 130n
+preplace netloc processing_system7_0_DDR 1 6 1 NJ 500
+preplace netloc processing_system7_0_FIXED_IO 1 6 1 NJ 520
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 380 380 NJ 380 NJ 380 1400J 430 1770J 440 2260
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 4 680J 610 NJ 610 1380J 650 1720
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 4 NJ 600 NJ 600 1410J 450 1730
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 2 NJ 620 1010
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 690 640n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 3 680J 630 NJ 630 1360
+levelinfo -pg 1 0 200 530 860 1190 1580 2030 2290
+pagesize -pg 1 -db -bbox -sgen -120 0 2410 930
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"1"
+}

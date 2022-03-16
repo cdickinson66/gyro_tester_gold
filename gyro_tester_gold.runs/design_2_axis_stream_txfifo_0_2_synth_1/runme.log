@@ -1,0 +1,355 @@
+
+*** Running vivado
+    with args -log design_2_axis_stream_txfifo_0_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_axis_stream_txfifo_0_2.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_2_axis_stream_txfifo_0_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1351.176 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Asus/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Asus/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Asus/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_2_axis_stream_txfifo_0_2 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17544
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1351.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_2_axis_stream_txfifo_0_2' [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_axis_stream_txfifo_0_2/synth/design_2_axis_stream_txfifo_0_2.v:56]
+INFO: [Synth 8-6157] synthesizing module 'axis_stream_txfifo_v2_0' [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'axis_stream_txfifo_v2_0_S00_AXI' [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0_S00_AXI.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'axis_stream_txfifo_v2_0_S00_AXI' (1#1) [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0_S00_AXI.v:4]
+WARNING: [Synth 8-6014] Unused sequential element wr_addr_reg_reg was removed.  [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0.v:225]
+WARNING: [Synth 8-6014] Unused sequential element fake_4096_reg was removed.  [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0.v:367]
+WARNING: [Synth 8-3848] Net m00_axis_tstrb in module/entity axis_stream_txfifo_v2_0 does not have driver. [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0.v:75]
+WARNING: [Synth 8-3848] Net m01_axis_tstrb in module/entity axis_stream_txfifo_v2_0 does not have driver. [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0.v:84]
+WARNING: [Synth 8-3848] Net m02_axis_tstrb in module/entity axis_stream_txfifo_v2_0 does not have driver. [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'axis_stream_txfifo_v2_0' (2#1) [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/8653/hdl/axis_stream_txfifo_v2_0.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_2_axis_stream_txfifo_0_2' (3#1) [c:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_axis_stream_txfifo_0_2/synth/design_2_axis_stream_txfifo_0_2.v:56]
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module axis_stream_txfifo_v2_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module axis_stream_txfifo_v2_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module axis_stream_txfifo_v2_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module axis_stream_txfifo_v2_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module axis_stream_txfifo_v2_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module axis_stream_txfifo_v2_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tstrb[3] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tstrb[2] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tstrb[1] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tstrb[0] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tstrb[3] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tstrb[2] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tstrb[1] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tstrb[0] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tstrb[3] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tstrb[2] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tstrb[1] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tstrb[0] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_aclk in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_aresetn in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_aclk in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_aresetn in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tready in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_aclk in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_aresetn in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tready in module axis_stream_txfifo_v2_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1351.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1351.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1351.176 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1351.176 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1421.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1421.348 ; gain = 0.008
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "axis_stream_txfifo_v2_0:/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               34 Bit    Registers := 6     
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	             272K Bit	(8192 X 34 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port m01_axis_tstrb[3] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tstrb[2] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tstrb[1] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tstrb[0] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tstrb[3] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tstrb[2] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tstrb[1] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tstrb[0] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tstrb[3] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tstrb[2] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tstrb[1] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tstrb[0] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_tready in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_aclk in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m01_axis_aresetn in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_tready in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_aclk in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m02_axis_aresetn in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_aclk in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_aresetn in module design_2_axis_stream_txfifo_0_2 is either unconnected or has no load
+INFO: [Synth 8-5784] Optimized 1 bits of RAM "inst/mem_reg" due to constant propagation. Old ram width 34 bits, new ram width 33 bits.
+INFO: [Synth 8-5784] Optimized 1 bits of RAM "inst/mem_reg" due to constant propagation. Old ram width 34 bits, new ram width 33 bits.
+INFO: [Synth 8-5784] Optimized 1 bits of RAM "inst/mem_reg" due to constant propagation. Old ram width 34 bits, new ram width 33 bits.
+INFO: [Synth 8-3971] The signal "design_2_axis_stream_txfifo_0_2/inst/mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
+-------NONE-------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_2_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/mem_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |     7|
+|2     |LUT1     |     4|
+|3     |LUT2     |     1|
+|4     |LUT3     |     3|
+|5     |LUT4     |    26|
+|6     |LUT5     |     1|
+|7     |LUT6     |    48|
+|8     |RAMB18E1 |     3|
+|9     |RAMB36E1 |    24|
+|10    |FDCE     |   126|
+|11    |FDRE     |   169|
+|12    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1421.348 ; gain = 70.172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1421.348 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1421.348 ; gain = 70.172
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1421.348 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1421.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: baadbe58
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1421.348 ; gain = 70.172
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.runs/design_2_axis_stream_txfifo_0_2_synth_1/design_2_axis_stream_txfifo_0_2.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_2_axis_stream_txfifo_0_2, cache-ID = 804666441a6d3391
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Asus/Desktop/gyro_tester_gold/gyro_tester_gold.runs/design_2_axis_stream_txfifo_0_2_synth_1/design_2_axis_stream_txfifo_0_2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_2_axis_stream_txfifo_0_2_utilization_synth.rpt -pb design_2_axis_stream_txfifo_0_2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 00:03:42 2022...
