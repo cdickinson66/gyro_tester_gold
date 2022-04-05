@@ -5,17 +5,27 @@ INFO: [VRFC 10-311] analyzing module dff
 INFO: [VRFC 10-311] analyzing module SPI_ip_v1_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_SPI_ip_0_0/sim/design_2_SPI_ip_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module design_2_SPI_ip_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_processing_system7_0_0/sim/design_2_processing_system7_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_2_processing_system7_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_xbar_0/sim/design_2_xbar_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module design_2_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_5/sim/design_2_auto_pc_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_0/sim/design_2_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_1/sim/design_2_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_2/sim/design_2_auto_pc_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_3/sim/design_2_auto_pc_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_4/sim/design_2_auto_pc_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module axis_stream_fifo_v1_0_S00_AXI
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/hdl/axis_stream_txfifo_v2_0_S00_AXIS.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module axis_stream_txfifo_v2_0_S00_AXIS
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/src/syncr.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module syncr
-WARNING: [VRFC 10-998] macro IVAL redefined [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/src/syncr.sv:36]
+WARNING: [VRFC 10-3507] macro 'IVAL' redefined [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/src/syncr.sv:36]
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/src/gen_async_que.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module gen_async_que
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0.sv" into library xil_defaultlib
@@ -27,7 +37,7 @@ INFO: [VRFC 10-311] analyzing module BiDirChannels_v1_0_S00_AXI
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/b070/hdl/BiDirChannels_v1_0.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module gen_sync_que_srl
 INFO: [VRFC 10-311] analyzing module dff
-WARNING: [VRFC 10-2845] overwriting previous definition of module dff [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/b070/hdl/BiDirChannels_v1_0.sv:170]
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'dff' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/b070/hdl/BiDirChannels_v1_0.sv:170]
 INFO: [VRFC 10-311] analyzing module clock_divider_by_2
 INFO: [VRFC 10-311] analyzing module counter48Cycles
 INFO: [VRFC 10-311] analyzing module clock_divider_by_10
@@ -61,6 +71,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tes
 INFO: [VRFC 10-311] analyzing module axis_stream_txfifo_v2_0
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_axis_stream_txfifo_0_2/sim/design_2_axis_stream_txfifo_0_2.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module design_2_axis_stream_txfifo_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_processing_system7_0_0/sim/design_2_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_processing_system7_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_0c5c_one_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module bd_0c5c_one_0
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_0c5c_arsw_0.sv" into library xil_defaultlib
@@ -147,18 +159,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_go
 INFO: [VRFC 10-311] analyzing module design_2_smartconnect_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_xlconcat_1_0/sim/design_2_xlconcat_1_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module design_2_xlconcat_1_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_5/sim/design_2_auto_pc_5.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_2_auto_pc_5
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_0/sim/design_2_auto_pc_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_2_auto_pc_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_1/sim/design_2_auto_pc_1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_2_auto_pc_1
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_2/sim/design_2_auto_pc_2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_2_auto_pc_2
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_3/sim/design_2_auto_pc_3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_2_auto_pc_3
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_4/sim/design_2_auto_pc_4.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module design_2_auto_pc_4
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/sim/design_2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module design_2
 INFO: [VRFC 10-311] analyzing module design_2_ps7_0_axi_periph_0

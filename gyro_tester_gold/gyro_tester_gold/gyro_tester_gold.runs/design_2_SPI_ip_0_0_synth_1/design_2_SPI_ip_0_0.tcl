@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_2_SPI_ip_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {Synth 8-5799}  -string {{CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic}}  -suppress 
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }

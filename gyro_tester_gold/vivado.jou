@@ -1,107 +1,173 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Apr  1 09:14:37 2022
-# Process ID: 49263
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Apr  4 16:20:58 2022
+# Process ID: 45920
 # Current directory: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold
 # Command line: vivado
 # Log file: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/vivado.log
 # Journal file: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/vivado.jou
+# Running On: xsjcdickins40x, OS: Linux, CPU Frequency: 2600.248 MHz, CPU Physical cores: 8, Host memory: 33556 MB
 #-----------------------------------------------------------
 start_gui
 open_project /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.xpr
 update_compile_order -fileset sources_1
 open_bd_design {/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd}
-set_msg_config -suppress -id {Synth 8-5799} -string {{CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic} } 
-launch_runs synth_2 -lsf {bsub -R select[type=X86_64] -N -q medium}
-ipx::edit_ip_in_project -upgrade true -name axis_stream_txfifo_v2_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_txfifo_v2_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0/component.xml
-update_compile_order -fileset sources_1
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M01_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M02_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-launch_runs synth_1 -lsf {bsub -R select[type=X86_64] -N -q medium}
-wait_on_run synth_1
-set_property core_revision 7 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0
-report_ip_status -name ip_status 
-upgrade_ip -vlnv user.org:user:axis_stream_txfifo:2.0 [get_ips  design_2_axis_stream_txfifo_0_2] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_2_axis_stream_txfifo_0_2] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
+reset_run design_2_xbar_0_synth_1
+reset_run synth_2
+launch_runs synth_2 -cluster_configuration lsf
+wait_on_run synth_2
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
 ipx::edit_ip_in_project -upgrade true -name axis_stream_fifo_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_fifo_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/component.xml
 update_compile_order -fileset sources_1
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M00_AXIS -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-launch_runs synth_1 -lsf {bsub -R select[type=X86_64] -N -q medium}
-wait_on_run synth_1
-set_property core_revision 46 [ipx::current_core]
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/hdl/axis_stream_fifo_v1_0_S00_AXI.sv
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 51 [ipx::current_core]
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
 ipx::save_core [ipx::current_core]
 ipx::move_temp_component_back -component [ipx::current_core]
 close_project -delete
 update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
 report_ip_status -name ip_status 
-upgrade_ip [get_ips  {design_2_axis_stream_txfifo_0_2 design_2_RxFIFO_0}] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips {design_2_axis_stream_txfifo_0_2 design_2_RxFIFO_0}] -no_script -sync -force -quiet
+upgrade_ip -vlnv xilinx.com:user:axis_stream_fifo:1.0 [get_ips  design_2_RxFIFO_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_2_RxFIFO_0] -no_script -sync -force -quiet
 report_ip_status -name ip_status 
-ipx::edit_ip_in_project -upgrade true -name axis_stream_fifo_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_fifo_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name BiDirChannels_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/BiDirChannels_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml
 update_compile_order -fileset sources_1
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M00_AXIS -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/hdl/BiDirChannels_v1_0_S00_AXI.sv
 update_compile_order -fileset sources_1
-add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/gen_async_que.sv
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 118 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:BiDirChannels:1.0 [get_ips  design_2_BiDirChannels_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_2_BiDirChannels_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name BiDirChannels_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/BiDirChannels_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/hdl/GyroInputOutputSerializer.sv
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src {/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/clock_divider_by_10.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/upCounter8Bits.sv}
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src {/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/register_2bits.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/upCounter12Bits.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/clock_divider_by_2.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/counter48Cycles.sv}
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src {/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/dff.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/mux_8x1_1bit.sv}
 update_compile_order -fileset sources_1
 ipx::merge_project_changes files [ipx::current_core]
 ipx::merge_project_changes hdl_parameters [ipx::current_core]
-ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces txclk -of_objects [ipx::current_core]]
-ipx::add_bus_parameter ASSOCIATED_RESET [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
-launch_runs synth_1 -lsf {bsub -R select[type=X86_64] -N -q medium}
-wait_on_run synth_1
-set_property core_revision 47 [ipx::current_core]
+set_property core_revision 119 [ipx::current_core]
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
 ipx::save_core [ipx::current_core]
 ipx::move_temp_component_back -component [ipx::current_core]
 close_project -delete
 update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
 report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:axis_stream_fifo:1.0 [get_ips  design_2_RxFIFO_0] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_2_RxFIFO_0] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-ipx::edit_ip_in_project -upgrade true -name axis_stream_fifo_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_fifo_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/component.xml
+upgrade_ip -vlnv xilinx.com:user:BiDirChannels:1.0 [get_ips  design_2_BiDirChannels_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_2_BiDirChannels_0_0] -no_script -sync -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name BiDirChannels_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/BiDirChannels_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
 update_compile_order -fileset sources_1
-ipx::associate_bus_interfaces -busif S00_AXI -clock txclk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M00_AXIS -clock clk [ipx::current_core]
-set_property core_revision 48 [ipx::current_core]
+set_property core_revision 120 [ipx::current_core]
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
 ipx::save_core [ipx::current_core]
 ipx::move_temp_component_back -component [ipx::current_core]
 close_project -delete
 update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
 report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:axis_stream_fifo:1.0 [get_ips  design_2_RxFIFO_0] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_2_RxFIFO_0] -no_script -sync -force -quiet
+upgrade_ip -vlnv xilinx.com:user:BiDirChannels:1.0 [get_ips  design_2_BiDirChannels_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_2_BiDirChannels_0_0] -no_script -sync -force -quiet
 report_ip_status -name ip_status 
+reset_run synth_2
+launch_runs synth_2 -cluster_configuration lsf
+wait_on_run synth_2
+launch_runs impl_4 -cluster_configuration lsf
+wait_on_run impl_4
+ipx::edit_ip_in_project -upgrade true -name axi4_pl_SPI_ip_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axi4_pl_SPI_ip_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/dff.sv
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 12 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+ipx::edit_ip_in_project -upgrade true -name BiDirChannels_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/BiDirChannels_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 121 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_2_SPI_ip_0_0 design_2_BiDirChannels_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {design_2_SPI_ip_0_0 design_2_BiDirChannels_0_0}] -no_script -sync -force -quiet
+ipx::edit_ip_in_project -upgrade true -name axi4_pl_SPI_ip_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axi4_pl_SPI_ip_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 13 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:axi4_pl_SPI_ip:1.0 [get_ips  design_2_SPI_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_2_SPI_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_2
+launch_runs synth_2 -cluster_configuration lsf
+wait_on_run synth_2
+launch_runs impl_4 -cluster_configuration lsf
+wait_on_run impl_4
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:axi4_pl_SPI_ip:1.0 [get_ips  design_2_SPI_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_2_SPI_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name axi4_pl_SPI_ip_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axi4_pl_SPI_ip_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 14 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:axi4_pl_SPI_ip:1.0 [get_ips  design_2_SPI_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_2_SPI_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_2
+launch_runs synth_2 -cluster_configuration lsf
+wait_on_run synth_2

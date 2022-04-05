@@ -1,7 +1,7 @@
 //Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-//Date        : Fri Apr  1 13:43:42 2022
+//Date        : Mon Apr  4 18:47:19 2022
 //Host        : xsjcdickins40x running 64-bit CentOS Linux release 7.4.1708 (Core)
 //Command     : generate_target design_2.bd
 //Design      : design_2
@@ -629,9 +629,7 @@ module design_2
         .SPI_SCK(SPI_ip_0_SPI_SCK),
         .clk(processing_system7_0_FCLK_CLK0),
         .rstn(rst_ps7_0_100M_peripheral_aresetn),
-        .s00_axi_aclk(processing_system7_0_FCLK_CLK0),
         .s00_axi_araddr(ps7_0_axi_periph_M01_AXI_ARADDR[3:0]),
-        .s00_axi_aresetn(rst_ps7_0_100M_peripheral_aresetn),
         .s00_axi_arprot(ps7_0_axi_periph_M01_AXI_ARPROT),
         .s00_axi_arready(ps7_0_axi_periph_M01_AXI_ARREADY),
         .s00_axi_arvalid(ps7_0_axi_periph_M01_AXI_ARVALID),

@@ -1,8 +1,8 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
--- Date        : Fri Apr  1 13:26:24 2022
--- Host        : xsjlc220116 running 64-bit Red Hat Enterprise Linux Workstation release 7.7 (Maipo)
+-- Date        : Mon Apr  4 18:48:49 2022
+-- Host        : xsjlc170313 running 64-bit Red Hat Enterprise Linux Workstation release 7.7 (Maipo)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_2_SPI_ip_0_0_stub.vhdl
 -- Design      : design_2_SPI_ip_0_0
@@ -37,9 +37,7 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
     s00_axi_rdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s00_axi_rvalid : out STD_LOGIC;
-    s00_axi_rready : in STD_LOGIC;
-    s00_axi_aclk : in STD_LOGIC;
-    s00_axi_aresetn : in STD_LOGIC
+    s00_axi_rready : in STD_LOGIC
   );
 
 end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
@@ -48,7 +46,7 @@ architecture stub of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "clk,rstn,SPI_D,SPI_SCK,SPI_CS,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,s00_axi_aclk,s00_axi_aresetn";
+attribute black_box_pad_pin of stub : architecture is "clk,rstn,SPI_D,SPI_SCK,SPI_CS,s00_axi_awaddr[3:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[3:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "SPI_ip_v1_0,Vivado 2021.2";
 begin

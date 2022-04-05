@@ -1,9 +1,9 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_axi_dma_0_0/sim/design_2_axi_dma_0_0.vhd" \
 "../../../../gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_proc_sys_reset_0_1/sim/design_2_proc_sys_reset_0_1.vhd" \
 "../../../../gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_0c5c_psr_aclk_0.vhd" \
 "../../../../gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_proc_sys_reset_0_2/sim/design_2_proc_sys_reset_0_2.vhd" \
+"../../../../gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_axi_dma_0_0/sim/design_2_axi_dma_0_0.vhd" \
 
 # Do not sort compile order
 nosort

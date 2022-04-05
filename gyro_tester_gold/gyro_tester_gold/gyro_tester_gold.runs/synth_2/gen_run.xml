@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7z020clg484-1" LaunchTime="1648845858">
+<GenRun Id="synth_2" LaunchPart="xc7z020clg484-1" LaunchTime="1649123254" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_2/design_2_wrapper.dcp">
   <File Type="VDS-TIMING-PB" Name="design_2_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="design_2_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="design_2_wrapper.dcp"/>
@@ -51,6 +51,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_2/design_2_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_2"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
@@ -59,14 +67,13 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_SPI_ip_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_2_RxFIFO_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_proc_sys_reset_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_proc_sys_reset_0_2"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_2_smartconnect_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_2_RxFIFO_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_BiDirChannels_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_2_axis_stream_txfifo_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_2_SPI_ip_0_0"/>
 </GenRun>

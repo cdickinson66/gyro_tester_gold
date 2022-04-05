@@ -1,0 +1,1135 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Apr  2 07:09:09 2022
+# Process ID: 1718
+# Current directory: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold
+# Command line: vivado
+# Log file: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/vivado.log
+# Journal file: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/vivado.jou
+# Running On: xsjcdickins40x, OS: Linux, CPU Frequency: 2600.248 MHz, CPU Physical cores: 8, Host memory: 33556 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_2.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_2_proc_sys_reset_0_2
+design_2_smartconnect_0_0
+design_2_processing_system7_0_0
+design_2_proc_sys_reset_0_1
+
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 8079.492 ; gain = 133.098 ; free physical = 20232 ; free virtual = 26538
+update_compile_order -fileset sources_1
+open_bd_design {/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd}
+Reading block design file </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd>...
+Adding component instance block -- xilinx.com:user:axi4_pl_SPI_ip:1.0 - SPI_ip_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - AXI_Register_Demux
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:user:axis_stream_fifo:1.0 - RxFIFO
+Adding component instance block -- xilinx.com:user:BiDirChannels:1.0 - BiDirChannels_0
+Adding component instance block -- user.org:user:axis_stream_txfifo:2.0 - TxFIFO
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - txclk_reset_domain
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - clk_reset_domain
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Successfully read diagram <design_2> from block design file </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 8300.617 ; gain = 0.000 ; free physical = 17625 ; free virtual = 24031
+report_ip_status -name ip_status 
+history
+     1 start_gui
+     2 open_project /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.xpr
+     3 update_compile_order -fileset sources_1
+
+     4 open_bd_design {/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd}
+     5 report_ip_status -name ip_status 
+     6 history
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+report_ip_status -name ip_status 
+reset_run synth_2
+INFO: [Project 1-1160] Copying file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/design_2_wrapper.dcp to /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/utils_1/imports/synth_2 and adding it to utils fileset
+launch_runs synth_2 -cluster_configuration lsf
+[Sat Apr  2 07:17:35 2022] Launched synth_2...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 9715.027 ; gain = 0.000 ; free physical = 17483 ; free virtual = 23926
+launch_runs impl_4 -cluster_configuration lsf
+[Sat Apr  2 07:19:03 2022] Launched impl_4...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/impl_4/runme.log
+launch_runs impl_4 -to_step write_bitstream -jobs 4 -cluster_configuration lsf
+[Sat Apr  2 07:45:46 2022] Launched impl_4...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/impl_4/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'design_2_wrapper'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_2_wrapper' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.sim/sim_1/behav/xsim/sc_xtlm_design_2_smartconnect_0_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -L axi_vip_v1_1_11 -L processing_system7_vip_v1_0_13 -L smartconnect_v1_0 -L xilinx_vip -prj design_2_wrapper_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/2e00/hdl/SPI_ip_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SPI_ip_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/2e00/hdl/SPI_ip_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dff
+INFO: [VRFC 10-311] analyzing module SPI_ip_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_SPI_ip_0_0/sim/design_2_SPI_ip_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_SPI_ip_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_xbar_0/sim/design_2_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_5/sim/design_2_auto_pc_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_0/sim/design_2_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_1/sim/design_2_auto_pc_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_2/sim/design_2_auto_pc_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_3/sim/design_2_auto_pc_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_auto_pc_4/sim/design_2_auto_pc_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_auto_pc_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_stream_fifo_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/hdl/axis_stream_txfifo_v2_0_S00_AXIS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_stream_txfifo_v2_0_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/src/syncr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module syncr
+WARNING: [VRFC 10-3507] macro 'IVAL' redefined [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/src/syncr.sv:36]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/src/gen_async_que.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_async_que
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_stream_fifo_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_RxFIFO_0/sim/design_2_RxFIFO_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_RxFIFO_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/b070/hdl/BiDirChannels_v1_0_S00_AXI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BiDirChannels_v1_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/b070/hdl/BiDirChannels_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gen_sync_que_srl
+INFO: [VRFC 10-311] analyzing module dff
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'dff' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/b070/hdl/BiDirChannels_v1_0.sv:170]
+INFO: [VRFC 10-311] analyzing module clock_divider_by_2
+INFO: [VRFC 10-311] analyzing module counter48Cycles
+INFO: [VRFC 10-311] analyzing module clock_divider_by_10
+INFO: [VRFC 10-311] analyzing module maskHSCK
+INFO: [VRFC 10-2458] undeclared symbol mask, assumed default net type wire [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/b070/hdl/BiDirChannels_v1_0.sv:302]
+INFO: [VRFC 10-311] analyzing module register_2bits
+INFO: [VRFC 10-311] analyzing module register_4bits
+INFO: [VRFC 10-311] analyzing module register_16bits
+INFO: [VRFC 10-311] analyzing module outputShiftRegister32Bits
+INFO: [VRFC 10-311] analyzing module inputShiftRegister32Bits
+INFO: [VRFC 10-311] analyzing module mux_2x1_1bit
+INFO: [VRFC 10-311] analyzing module mux_4x1_1bit
+INFO: [VRFC 10-311] analyzing module mux_8x1_1bit
+INFO: [VRFC 10-311] analyzing module demux_1_to_4
+INFO: [VRFC 10-311] analyzing module demux_1_to_8
+INFO: [VRFC 10-311] analyzing module register_32bits
+INFO: [VRFC 10-311] analyzing module syncReady
+INFO: [VRFC 10-311] analyzing module upCounter3Bits
+INFO: [VRFC 10-311] analyzing module upCounter8Bits
+INFO: [VRFC 10-311] analyzing module upCounter12Bits
+INFO: [VRFC 10-311] analyzing module GyroChannelDebugger
+INFO: [VRFC 10-311] analyzing module packet_size_logic
+INFO: [VRFC 10-311] analyzing module deinterleaver
+INFO: [VRFC 10-311] analyzing module GyroInputOutputSerializer
+INFO: [VRFC 10-311] analyzing module BiDirChannels_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_BiDirChannels_0_0/sim/design_2_BiDirChannels_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_BiDirChannels_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/77aa/hdl/axis_stream_txfifo_v2_0_S00_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_stream_txfifo_v2_0_S00_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ipshared/77aa/hdl/axis_stream_txfifo_v2_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_stream_txfifo_v2_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_axis_stream_txfifo_0_2/sim/design_2_axis_stream_txfifo_0_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_axis_stream_txfifo_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_processing_system7_0_0/sim/design_2_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_0c5c_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_0c5c_arsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_arsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_0c5c_rsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_rsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_0c5c_awsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_awsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_0c5c_wsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_wsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_0c5c_bsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_bsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_0c5c_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_0c5c_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_0c5c_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_0c5c_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_0c5c_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_0c5c_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_0c5c_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_0c5c_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_0c5c_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_0c5c_s01mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s01mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_0c5c_s01tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s01tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_0c5c_s01sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s01sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_0c5c_s01a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s01a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_0c5c_sarn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_sarn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_0c5c_srn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_srn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_0c5c_s02mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s02mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_0c5c_s02tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s02tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_0c5c_s02sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s02sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_0c5c_s02a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_s02a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_0c5c_sawn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_sawn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_0c5c_swn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_swn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_28/sim/bd_0c5c_sbn_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_sbn_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_29/sim/bd_0c5c_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_30/sim/bd_0c5c_m00arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_m00arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_31/sim/bd_0c5c_m00rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_m00rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_32/sim/bd_0c5c_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_0c5c_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_34/sim/bd_0c5c_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/ip/ip_35/sim/bd_0c5c_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c_m00e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/sim/bd_0c5c.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_0c5c
+INFO: [VRFC 10-311] analyzing module clk_map_imp_1S8ISXI
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_8NDKQ5
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_LY38JL
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_17AGKDQ
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_127TQUS
+INFO: [VRFC 10-311] analyzing module s01_entry_pipeline_imp_22JBP6
+INFO: [VRFC 10-311] analyzing module s01_nodes_imp_5QRDXE
+INFO: [VRFC 10-311] analyzing module s02_entry_pipeline_imp_VIH8EF
+INFO: [VRFC 10-311] analyzing module s02_nodes_imp_T30Z2X
+INFO: [VRFC 10-311] analyzing module switchboards_imp_1QSE49S
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/sim/design_2_smartconnect_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_smartconnect_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_xlconcat_1_0/sim/design_2_xlconcat_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_xlconcat_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/sim/design_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2
+INFO: [VRFC 10-311] analyzing module design_2_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module m00_couplers_imp_1G08EHP
+INFO: [VRFC 10-311] analyzing module m01_couplers_imp_NDGYWS
+INFO: [VRFC 10-311] analyzing module m02_couplers_imp_1GX5PEM
+INFO: [VRFC 10-311] analyzing module m03_couplers_imp_MQ77ZZ
+INFO: [VRFC 10-311] analyzing module m04_couplers_imp_1D1SX97
+INFO: [VRFC 10-311] analyzing module m05_couplers_imp_QIQYEY
+INFO: [VRFC 10-311] analyzing module m06_couplers_imp_1E8QK0O
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_IEFX27
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_2_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+xvhdl --incr --relax -prj design_2_wrapper_vhdl.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_25 -L fifo_generator_v13_2_6 -L axi_data_fifo_v2_1_24 -L axi_crossbar_v2_1_26 -L axi_protocol_converter_v2_1_25 -L axi_vip_v1_1_11 -L processing_system7_vip_v1_0_13 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xlconstant_v1_1_7 -L smartconnect_v1_0 -L xlconcat_v2_1_4 -L lib_pkg_v1_0_2 -L lib_fifo_v1_0_15 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_27 -L axi_sg_v4_1_14 -L axi_dma_v7_1_26 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_2_wrapper_behav xil_defaultlib.design_2_wrapper xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_25 -L fifo_generator_v13_2_6 -L axi_data_fifo_v2_1_24 -L axi_crossbar_v2_1_26 -L axi_protocol_converter_v2_1_25 -L axi_vip_v1_1_11 -L processing_system7_vip_v1_0_13 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L xlconstant_v1_1_7 -L smartconnect_v1_0 -L xlconcat_v2_1_4 -L lib_pkg_v1_0_2 -L lib_fifo_v1_0_15 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_27 -L axi_sg_v4_1_14 -L axi_dma_v7_1_26 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_2_wrapper_behav xil_defaultlib.design_2_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 16 for port 'IRQ_F2P' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_processing_system7_0_0/sim/design_2_processing_system7_0_0.v:677]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_gp.v:208]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5546]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5564]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_gp.v:292]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_hp.v:80]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_hp.v:89]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10256]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10274]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10275]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_hp.v:165]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_hp.v:174]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_hp.v:251]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_hp.v:260]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_hp.v:337]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2021.2_1021_0703/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_13_axi_hp.v:346]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
+WARNING: [VRFC 10-5021] port 'mm2s_prmry_reset_out_n' is not connected on this instance [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/sim/design_2.v:697]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/sim/design_2.v:890]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/sim/design_2.v:1002]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4376]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4631]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/axi_crossbar_v2_1/hdl/axi_crossbar_v2_1_vl_rfs.v:3103]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/sim/bd_0c5c.v:1439]
+WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.ip_user_files/bd/design_2/ip/design_2_processing_system7_0_0/sim/design_2_processing_system7_0_0.v:289]
+WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3809]
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling package axi_dma_v7_1_26.axi_dma_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package axi_sg_v4_1_14.axi_sg_pkg
+Compiling package xpm.vcomponents
+Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling module xil_defaultlib.m00_couplers_imp_1G08EHP
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axi_r...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axi_r...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_b...
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_a...
+Compiling module xil_defaultlib.design_2_auto_pc_0
+Compiling module xil_defaultlib.m01_couplers_imp_NDGYWS
+Compiling module xil_defaultlib.design_2_auto_pc_1
+Compiling module xil_defaultlib.m02_couplers_imp_1GX5PEM
+Compiling module xil_defaultlib.design_2_auto_pc_2
+Compiling module xil_defaultlib.m03_couplers_imp_MQ77ZZ
+Compiling module xil_defaultlib.design_2_auto_pc_3
+Compiling module xil_defaultlib.m04_couplers_imp_1D1SX97
+Compiling module xil_defaultlib.design_2_auto_pc_4
+Compiling module xil_defaultlib.m05_couplers_imp_QIQYEY
+Compiling module xil_defaultlib.m06_couplers_imp_1E8QK0O
+Compiling module axi_protocol_converter_v2_1_25.axi_protocol_converter_v2_1_25_a...
+Compiling module xil_defaultlib.design_2_auto_pc_5
+Compiling module xil_defaultlib.s00_couplers_imp_IEFX27
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_addr_decode...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_arbiter_res...
+Compiling module unisims_ver.MUXF7
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module axi_data_fifo_v2_1_24.axi_data_fifo_v2_1_24_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_24.axi_data_fifo_v2_1_24_axic_srl_f...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_si_transact...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_si_transact...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_splitter
+Compiling module axi_data_fifo_v2_1_24.axi_data_fifo_v2_1_24_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_24.axi_data_fifo_v2_1_24_axic_reg_s...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_wdata_route...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_24.axi_data_fifo_v2_1_24_axic_srl_f...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axic_...
+Compiling module axi_register_slice_v2_1_25.axi_register_slice_v2_1_25_axi_r...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_wdata_mux(C...
+Compiling module axi_data_fifo_v2_1_24.axi_data_fifo_v2_1_24_ndeep_srl(...
+Compiling module axi_data_fifo_v2_1_24.axi_data_fifo_v2_1_24_axic_srl_f...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_addr_arbite...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_decerr_slav...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_crossbar(C_...
+Compiling module axi_crossbar_v2_1_26.axi_crossbar_v2_1_26_axi_crossba...
+Compiling module xil_defaultlib.design_2_xbar_0
+Compiling module xil_defaultlib.design_2_ps7_0_axi_periph_0
+Compiling module xil_defaultlib.BiDirChannels_v1_0_S00_AXI_defau...
+Compiling module xil_defaultlib.clock_divider_by_10
+Compiling module xil_defaultlib.upCounter8Bits
+Compiling module xil_defaultlib.mux_8x1_1bit
+Compiling module xil_defaultlib.dff
+Compiling module xil_defaultlib.clock_divider_by_2
+Compiling module xil_defaultlib.register_2bits
+Compiling module xil_defaultlib.counter48Cycles
+Compiling module xil_defaultlib.upCounter12Bits
+Compiling module xil_defaultlib.gen_sync_que_srl(DPWR=2,WD=16)
+Compiling module xil_defaultlib.GyroInputOutputSerializer
+Compiling module xil_defaultlib.BiDirChannels_v1_0
+Compiling module xil_defaultlib.design_2_BiDirChannels_0_0
+Compiling module xil_defaultlib.axis_stream_fifo_v1_0_S00_AXI_de...
+Compiling module xil_defaultlib.axis_stream_txfifo_v2_0_S00_AXIS...
+Compiling module xil_defaultlib.syncr(WD=14,GRAY_MODE=1)
+Compiling module xil_defaultlib.syncr(WD=1)
+Compiling module xil_defaultlib.gen_async_que(DPWR=13,WD=17)
+Compiling module xil_defaultlib.axis_stream_fifo_v1_0
+Compiling module xil_defaultlib.design_2_RxFIFO_0
+Compiling module xil_defaultlib.SPI_ip_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.SPI_ip_v1_0
+Compiling module xil_defaultlib.design_2_SPI_ip_0_0
+Compiling module xil_defaultlib.axis_stream_txfifo_v2_0_S00_AXI_...
+Compiling module xil_defaultlib.axis_stream_txfifo_v2_0_S00_AXIS...
+Compiling module xil_defaultlib.axis_stream_txfifo_v2_0(ADDR_WID...
+Compiling module xil_defaultlib.design_2_axis_stream_txfifo_0_2
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_updt_sm [\axi_sg_updt_sm(c_sg_ch1_words_t...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_updt_cmdsts_if [axi_sg_updt_cmdsts_if_default]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_updt_mngr [\axi_sg_updt_mngr(c_sg_ch1_words...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_updt_queue [\axi_sg_updt_queue(c_sg_updt_des...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_updt_q_mngr [\axi_sg_updt_q_mngr(c_sg_updt_de...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_intrpt [axi_sg_intrpt_default]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_ftch_sm [\axi_sg_ftch_sm(c_sg_ftch_desc2q...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_ftch_pntr [axi_sg_ftch_pntr_default]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_ftch_cmdsts_if [axi_sg_ftch_cmdsts_if_default]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_ftch_mngr [\axi_sg_ftch_mngr(c_sg_ftch_desc...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_ftch_queue [\axi_sg_ftch_queue(c_sg_ftch_des...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_ftch_q_mngr [\axi_sg_ftch_q_mngr(c_sg_ftch_de...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_reset [axi_sg_reset_default]
+Compiling architecture imp of entity axi_sg_v4_1_14.axi_sg_fifo [\axi_sg_fifo(c_dwidth=68,c_depth...]
+Compiling architecture imp of entity axi_sg_v4_1_14.axi_sg_fifo [\axi_sg_fifo(c_dwidth=8,c_depth=...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_cmd_status [\axi_sg_cmd_status(c_stscmd_fifo...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_rd_status_cntl [axi_sg_rd_status_cntl_default]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_scc [\axi_sg_scc(c_sel_addr_width=2,c...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_addr_cntl [\axi_sg_addr_cntl(c_addr_fifo_de...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_rddata_cntl [\axi_sg_rddata_cntl(c_align_widt...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_mm2s_basic_wrap [\axi_sg_mm2s_basic_wrap(c_mm2s_a...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=3,c_dwidth=7...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=7,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=7,c_depth=3...]
+Compiling architecture imp of entity axi_sg_v4_1_14.axi_sg_fifo [\axi_sg_fifo(c_dwidth=7,c_depth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=3,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=3,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=2,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=2,c_depth=3...]
+Compiling architecture imp of entity axi_sg_v4_1_14.axi_sg_fifo [\axi_sg_fifo(c_dwidth=2,c_depth=...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_wr_status_cntl [\axi_sg_wr_status_cntl(c_sts_fif...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_scc_wr [\axi_sg_scc_wr(c_sel_addr_width=...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_addr_cntl [\axi_sg_addr_cntl(c_addr_fifo_de...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_wrdata_cntl [\axi_sg_wrdata_cntl(c_sel_addr_w...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_s2mm_basic_wrap [\axi_sg_s2mm_basic_wrap(c_s2mm_a...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg_datamover [\axi_sg_datamover(c_include_mm2s...]
+Compiling architecture implementation of entity axi_sg_v4_1_14.axi_sg [\axi_sg(c_sg_ftch_desc2queue=4,c...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_mm2s_sm [\axi_dma_mm2s_sm(c_sg_include_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=26,c_fa...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=26,c_family...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_mm2s_sg_if [\axi_dma_mm2s_sg_if(c_sg_include...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_mm2s_cmdsts_if [\axi_dma_mm2s_cmdsts_if(c_extra=...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_mm2s_sts_mngr [axi_dma_mm2s_sts_mngr_default]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_mm2s_mngr [\axi_dma_mm2s_mngr(c_prmy_cmdfif...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_sofeof_gen [axi_dma_sofeof_gen_default]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_s2mm_sm [\axi_dma_s2mm_sm(c_sg_include_st...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_s2mm_sg_if [\axi_dma_s2mm_sg_if(c_sg_include...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_s2mm_cmdsts_if [\axi_dma_s2mm_cmdsts_if(c_dm_sta...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_s2mm_sts_mngr [axi_dma_s2mm_sts_mngr_default]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_s2mm_mngr [\axi_dma_s2mm_mngr(c_prmy_cmdfif...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_reset [\axi_dma_reset(c_sg_include_stsc...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_rst_module [\axi_dma_rst_module(c_sg_include...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_mtbf_...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=10,c_mt...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_mtbf_...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_lite_if [\axi_dma_lite_if(c_num_ce=23,c_a...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_register [\axi_dma_register(c_num_register...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_register_s2mm [\axi_dma_register_s2mm(c_num_reg...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma_reg_module [\axi_dma_reg_module(c_axi_lite_i...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=8...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_depth=4...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=8...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=7...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=2...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture implementation of entity lib_fifo_v1_0_15.sync_fifo_fg [\sync_fifo_fg(c_family="zynq",c_...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_rd_sf [\axi_datamover_rd_sf(c_sf_fifo_d...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_skid_buf [axi_datamover_skid_buf_default]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_reset [axi_datamover_reset_default]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=71,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_stsc...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_rd_status_cntl [axi_datamover_rd_status_cntl_def...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_strb_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_op_mo...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_pcc [\axi_datamover_pcc(c_is_mm2s=1,c...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=5...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=59,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=59,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=59,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_famil...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=29,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=29,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=29,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_rdmux [\axi_datamover_rdmux(c_sel_addr_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_rddata_cntl [\axi_datamover_rddata_cntl(c_ali...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_mm2s_full_wrap [\axi_datamover_mm2s_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_ibttcc [\axi_datamover_ibttcc(c_sf_xfer_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_ms_strb_set [\axi_datamover_ms_strb_set(c_str...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_mssai_skid_buf [axi_datamover_mssai_skid_buf_def...]
+Compiling architecture working of entity axi_datamover_v5_1_27.axi_datamover_slice [\axi_datamover_slice(c_data_widt...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=9,c_fam...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=9,c_family=...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=9,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_s2mm_scatter [\axi_datamover_s2mm_scatter(c_en...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=25,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=25,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=25,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_s2mm_realign [\axi_datamover_s2mm_realign(c_en...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_stbs_set_nodre [\axi_datamover_stbs_set_nodre(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_skid_buf [\axi_datamover_skid_buf(c_wdata_...]
+Compiling module xpm.xpm_fifo_rst_default_1
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=5...
+Compiling module xpm.xpm_counter_updn
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture implementation of entity lib_fifo_v1_0_15.sync_fifo_fg [\sync_fifo_fg(c_family="zynq",c_...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling module xpm.xpm_fifo_rst_default_2
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=2...
+Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
+Compiling architecture implementation of entity lib_fifo_v1_0_15.sync_fifo_fg [\sync_fifo_fg(c_family="zynq",c_...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_indet_btt [\axi_datamover_indet_btt(c_ibtt_...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=35,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_stsc...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=6,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=21,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=21,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=21,...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=4,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=6,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=2,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=2,c_depth=6...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=2,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_wr_status_cntl [\axi_datamover_wr_status_cntl(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_addr_...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=27,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=27,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_27.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=27,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_wrdata_cntl [\axi_datamover_wrdata_cntl(c_rea...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_wr_demux [\axi_datamover_wr_demux(c_sel_ad...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_skid2mm_buf [\axi_datamover_skid2mm_buf(c_add...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover_s2mm_full_wrap [\axi_datamover_s2mm_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_27.axi_datamover [\axi_datamover(c_include_mm2s=1,...]
+Compiling architecture implementation of entity axi_dma_v7_1_26.axi_dma [\axi_dma(c_sg_include_stscntrl_s...]
+Compiling architecture design_2_axi_dma_0_0_arch of entity xil_defaultlib.design_2_axi_dma_0_0 [design_2_axi_dma_0_0_default]
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.bd_0c5c_one_0
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture bd_0c5c_psr_aclk_0_arch of entity xil_defaultlib.bd_0c5c_psr_aclk_0 [bd_0c5c_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_1S8ISXI
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xil_defaultlib.bd_0c5c_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_8NDKQ5
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=32...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=50...
+Compiling module xil_defaultlib.bd_0c5c_m00arn_0
+Compiling module xil_defaultlib.bd_0c5c_m00awn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=64...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=25...
+Compiling module xil_defaultlib.bd_0c5c_m00bn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=27...
+Compiling module xil_defaultlib.bd_0c5c_m00rn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=4,...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=34...
+Compiling module xil_defaultlib.bd_0c5c_m00wn_0
+Compiling module xil_defaultlib.m00_nodes_imp_LY38JL
+Compiling module xil_defaultlib.bd_0c5c_m00s2a_0
+Compiling module xil_defaultlib.bd_0c5c_s00a2s_0
+Compiling module xil_defaultlib.bd_0c5c_s00mmu_0
+Compiling module xil_defaultlib.bd_0c5c_s00sic_0
+Compiling module xil_defaultlib.bd_0c5c_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_17AGKDQ
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=57...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=44...
+Compiling module xil_defaultlib.bd_0c5c_sarn_0
+Compiling module xil_defaultlib.bd_0c5c_sawn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=83...
+Compiling module xil_defaultlib.bd_0c5c_sbn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=33...
+Compiling module xil_defaultlib.bd_0c5c_srn_0
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_memory_sdpram(MEMORY_SIZE=28...
+Compiling module xil_defaultlib.bd_0c5c_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_127TQUS
+Compiling module xil_defaultlib.bd_0c5c_s01a2s_0
+Compiling module xil_defaultlib.bd_0c5c_s01mmu_0
+Compiling module xil_defaultlib.bd_0c5c_s01sic_0
+Compiling module xil_defaultlib.bd_0c5c_s01tr_0
+Compiling module xil_defaultlib.s01_entry_pipeline_imp_22JBP6
+Compiling module xil_defaultlib.bd_0c5c_sarn_1
+Compiling module xil_defaultlib.bd_0c5c_srn_1
+Compiling module xil_defaultlib.s01_nodes_imp_5QRDXE
+Compiling module xil_defaultlib.bd_0c5c_s02a2s_0
+Compiling module xil_defaultlib.bd_0c5c_s02mmu_0
+Compiling module xil_defaultlib.bd_0c5c_s02sic_0
+Compiling module xil_defaultlib.bd_0c5c_s02tr_0
+Compiling module xil_defaultlib.s02_entry_pipeline_imp_VIH8EF
+Compiling module xil_defaultlib.bd_0c5c_sawn_1
+Compiling module xil_defaultlib.bd_0c5c_sbn_1
+Compiling module xil_defaultlib.bd_0c5c_swn_1
+Compiling module xil_defaultlib.s02_nodes_imp_T30Z2X
+Compiling module xil_defaultlib.bd_0c5c_arsw_0
+Compiling module xil_defaultlib.bd_0c5c_awsw_0
+Compiling module xil_defaultlib.bd_0c5c_bsw_0
+Compiling module xil_defaultlib.bd_0c5c_rsw_0
+Compiling module xil_defaultlib.bd_0c5c_wsw_0
+Compiling module xil_defaultlib.switchboards_imp_1QSE49S
+Compiling module xil_defaultlib.bd_0c5c
+Compiling module xil_defaultlib.design_2_smartconnect_0_0
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture design_2_proc_sys_reset_0_2_arch of entity xil_defaultlib.design_2_proc_sys_reset_0_2 [design_2_proc_sys_reset_0_2_defa...]
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_g...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_g...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_f...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_s...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_i...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_s...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_d...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_o...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_o...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_r...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_r...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_11.axi_vip_v1_1_11_top(C_AXI_PROTOC...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_11.axi_vip_v1_1_11_top(C_AXI_PROTOC...
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_11.axi_vip_v1_1_11_top(C_AXI_PROTOC...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_i...
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_11.axi_vip_v1_1_11_top(C_AXI_PROTOC...
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13_a...
+Compiling module processing_system7_vip_v1_0_13.processing_system7_vip_v1_0_13(C...
+Compiling module xil_defaultlib.design_2_processing_system7_0_0
+Compiling architecture design_2_proc_sys_reset_0_1_arch of entity xil_defaultlib.design_2_proc_sys_reset_0_1 [design_2_proc_sys_reset_0_1_defa...]
+Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat_default
+Compiling module xil_defaultlib.design_2_xlconcat_1_0
+Compiling module xil_defaultlib.design_2
+Compiling module xil_defaultlib.design_2_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_2_wrapper_behav
+run_program: Time (s): cpu = 00:02:16 ; elapsed = 00:00:50 . Memory (MB): peak = 9715.027 ; gain = 0.000 ; free physical = 17261 ; free virtual = 23936
+INFO: [USF-XSim-69] 'elaborate' step finished in '49' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_2_wrapper_behav -key {Behavioral:sim_1:Functional:design_2_wrapper} -tclbatch {design_2_wrapper.tcl} -protoinst "protoinst_files/bd_0c5c.protoinst" -protoinst "protoinst_files/design_2.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_0c5c.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//m00_exit_pipeline/m00_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//m00_exit_pipeline/m00_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//m00_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//m00_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//m00_nodes/m00_aw_node/M_AXIS_ARB
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//m00_nodes/m00_w_node/S_AXIS_ARB
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//m00_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_axi2sc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_entry_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_entry_pipeline/s00_mmu/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_entry_pipeline/s00_mmu/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_entry_pipeline/s00_si_converter/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_entry_pipeline/s00_si_converter/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_entry_pipeline/s00_transaction_regulator/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_entry_pipeline/s00_transaction_regulator/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s00_entry_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_axi2sc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_entry_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_entry_pipeline/s01_mmu/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_entry_pipeline/s01_mmu/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_entry_pipeline/s01_si_converter/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_entry_pipeline/s01_si_converter/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_entry_pipeline/s01_transaction_regulator/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_entry_pipeline/s01_transaction_regulator/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s01_entry_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_axi2sc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_entry_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_entry_pipeline/s02_mmu/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_entry_pipeline/s02_mmu/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_entry_pipeline/s02_si_converter/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_entry_pipeline/s02_si_converter/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_entry_pipeline/s02_transaction_regulator/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_entry_pipeline/s02_transaction_regulator/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i/axi_smc/inst//s02_entry_pipeline/s_axi
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_2.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/M02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/M03_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/M04_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/M05_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m01_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m01_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m01_couplers/auto_pc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m01_couplers/auto_pc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m02_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m02_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m02_couplers/auto_pc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m02_couplers/auto_pc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m03_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m03_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m03_couplers/auto_pc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m03_couplers/auto_pc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m04_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m04_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m04_couplers/auto_pc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m04_couplers/auto_pc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m05_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m05_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m05_couplers/auto_pc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m05_couplers/auto_pc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m06_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/m06_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/s00_couplers/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/s00_couplers/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/s00_couplers/auto_pc/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/s00_couplers/auto_pc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/xbar/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/xbar/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/xbar/M02_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/xbar/M03_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/xbar/M04_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/xbar/M05_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/xbar/M06_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//AXI_Register_Demux/xbar/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//BiDirChannels_0/M00_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//BiDirChannels_0/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//BiDirChannels_0/S00_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//BiDirChannels_0/s01_axis
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//BiDirChannels_0/s02_axis
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//RxFIFO/M00_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//RxFIFO/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//RxFIFO/S00_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//SPI_ip_0/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//TxFIFO/M00_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//TxFIFO/M01_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//TxFIFO/M02_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//TxFIFO/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//TxFIFO/S00_AXIS
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_dma_0/M_AXIS_MM2S
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_dma_0/M_AXI_MM2S
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_dma_0/M_AXI_S2MM
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_dma_0/M_AXI_SG
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_dma_0/S_AXIS_S2MM
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_dma_0/S_AXI_LITE
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_smc/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_smc/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_smc/S01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /design_2_wrapper/design_2_i//axi_smc/S02_AXI
+INFO: [Common 17-14] Message 'Wavedata 42-564' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Wavedata 42-559] Protocol instance "/design_2_wrapper/design_2_i//AXI_Register_Demux/m00_couplers/M_AXI" was created but is non-functional for the following reason(s):
+Port "AWID" must be a logic vector
+Port "AWADDR" must be a logic vector
+Port "AWPROT" must be a logic vector
+Port "AWLEN" must be a logic vector
+Port "AWSIZE" must be a logic vector
+Port "AWBURST" must be a logic vector
+Port "AWCACHE" must be a logic vector
+Port "WDATA" must be a logic vector
+Port "WSTRB" must be a logic vector
+Port "BID" must be a logic vector
+Port "BRESP" must be a logic vector
+Port "ARID" must be a logic vector
+Port "ARADDR" must be a logic vector
+Port "ARPROT" must be a logic vector
+Port "ARLEN" must be a logic vector
+Port "ARSIZE" must be a logic vector
+Port "ARBURST" must be a logic vector
+Port "ARCACHE" must be a logic vector
+Port "RID" must be a logic vector
+Port "RDATA" must be a logic vector
+Port "RRESP" must be a logic vector
+
+WARNING: [Wavedata 42-559] Protocol instance "/design_2_wrapper/design_2_i//AXI_Register_Demux/m00_couplers/S_AXI" was created but is non-functional for the following reason(s):
+Port "AWID" must be a logic vector
+Port "AWADDR" must be a logic vector
+Port "AWPROT" must be a logic vector
+Port "AWLEN" must be a logic vector
+Port "AWSIZE" must be a logic vector
+Port "AWBURST" must be a logic vector
+Port "AWCACHE" must be a logic vector
+Port "WDATA" must be a logic vector
+Port "WSTRB" must be a logic vector
+Port "BID" must be a logic vector
+Port "BRESP" must be a logic vector
+Port "ARID" must be a logic vector
+Port "ARADDR" must be a logic vector
+Port "ARPROT" must be a logic vector
+Port "ARLEN" must be a logic vector
+Port "ARSIZE" must be a logic vector
+Port "ARBURST" must be a logic vector
+Port "ARCACHE" must be a logic vector
+Port "RID" must be a logic vector
+Port "RDATA" must be a logic vector
+Port "RRESP" must be a logic vector
+
+WARNING: [Wavedata 42-559] Protocol instance "/design_2_wrapper/design_2_i//AXI_Register_Demux/m06_couplers/M_AXI" was created but is non-functional for the following reason(s):
+Port "AWID" must be a logic vector
+Port "AWADDR" must be a logic vector
+Port "AWPROT" must be a logic vector
+Port "AWLEN" must be a logic vector
+Port "AWSIZE" must be a logic vector
+Port "AWBURST" must be a logic vector
+Port "AWCACHE" must be a logic vector
+Port "WDATA" must be a logic vector
+Port "WSTRB" must be a logic vector
+Port "BID" must be a logic vector
+Port "BRESP" must be a logic vector
+Port "ARID" must be a logic vector
+Port "ARADDR" must be a logic vector
+Port "ARPROT" must be a logic vector
+Port "ARLEN" must be a logic vector
+Port "ARSIZE" must be a logic vector
+Port "ARBURST" must be a logic vector
+Port "ARCACHE" must be a logic vector
+Port "RID" must be a logic vector
+Port "RDATA" must be a logic vector
+Port "RRESP" must be a logic vector
+
+WARNING: [Wavedata 42-559] Protocol instance "/design_2_wrapper/design_2_i//AXI_Register_Demux/m06_couplers/S_AXI" was created but is non-functional for the following reason(s):
+Port "AWID" must be a logic vector
+Port "AWADDR" must be a logic vector
+Port "AWPROT" must be a logic vector
+Port "AWLEN" must be a logic vector
+Port "AWSIZE" must be a logic vector
+Port "AWBURST" must be a logic vector
+Port "AWCACHE" must be a logic vector
+Port "WDATA" must be a logic vector
+Port "WSTRB" must be a logic vector
+Port "BID" must be a logic vector
+Port "BRESP" must be a logic vector
+Port "ARID" must be a logic vector
+Port "ARADDR" must be a logic vector
+Port "ARPROT" must be a logic vector
+Port "ARLEN" must be a logic vector
+Port "ARSIZE" must be a logic vector
+Port "ARBURST" must be a logic vector
+Port "ARCACHE" must be a logic vector
+Port "RID" must be a logic vector
+Port "RDATA" must be a logic vector
+Port "RRESP" must be a logic vector
+
+Time resolution is 1 ps
+source design_2_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is ENABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: design_2_wrapper.design_2_i.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+                   0 else checking line ......x
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. design_2_wrapper.design_2_i.axi_dma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /design_2_wrapper/design_2_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/gen_s2mm_full/I_S2MM_FULL_WRAPPER/gen_enable_indet_btt_sf/I_INDET_BTT/I_XD_FIFO/non_blk_mem/I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial297_1861  Scope: design_2_wrapper.design_2_i.axi_dma_0.U0.I_PRMRY_DATAMOVER.gen_s2mm_full.I_S2MM_FULL_WRAPPER.gen_enable_indet_btt_sf.I_INDET_BTT.I_XD_FIFO.non_blk_mem.I_SYNC_FIFOGEN_FIFO.xpm_fifo_instance.xpm_fifo_sync_inst.xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 491
+WARNING: 5 ns design_2_wrapper.design_2_i.processing_system7_0.inst.M_AXI_GP0.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+WARNING: 5 ns design_2_wrapper.design_2_i.processing_system7_0.inst.S_AXI_HP0.slave.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+                   5 else checking line ......1
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_2_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:02:28 ; elapsed = 00:01:03 . Memory (MB): peak = 9733.902 ; gain = 18.875 ; free physical = 17144 ; free virtual = 23821
+close_sim
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  2 07:59:06 2022...

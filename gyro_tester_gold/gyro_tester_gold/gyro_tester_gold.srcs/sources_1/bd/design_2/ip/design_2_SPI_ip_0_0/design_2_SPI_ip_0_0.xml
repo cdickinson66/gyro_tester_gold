@@ -452,117 +452,6 @@
       </spirit:parameters>
     </spirit:busInterface>
     <spirit:busInterface>
-      <spirit:name>S00_AXI_RST</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>RST</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>s00_axi_aresetn</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>POLARITY</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>INSERT_VIP</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXI_RST.INSERT_VIP">0</spirit:value>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
-    <spirit:busInterface>
-      <spirit:name>S00_AXI_CLK</spirit:name>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>CLK</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>s00_axi_aclk</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:parameters>
-        <spirit:parameter>
-          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>ASSOCIATED_RESET</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET">s00_axi_aresetn</spirit:value>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_HZ">100000000</spirit:value>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>none</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>PHASE</spirit:name>
-          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE">0.0</spirit:value>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>none</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN">design_2_processing_system7_0_0_FCLK_CLK0</spirit:value>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>none</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_TOLERANCE_HZ">0</spirit:value>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>none</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>ASSOCIATED_PORT</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_PORT"/>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>none</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>INSERT_VIP</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S00_AXI_CLK.INSERT_VIP">0</spirit:value>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-      </spirit:parameters>
-    </spirit:busInterface>
-    <spirit:busInterface>
       <spirit:name>rstn</spirit:name>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
@@ -610,8 +499,25 @@
       </spirit:portMaps>
       <spirit:parameters>
         <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">S00_AXI</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">rstn</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
           <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ">0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -630,33 +536,6 @@
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
           <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN">design_2_processing_system7_0_0_FCLK_CLK0</spirit:value>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>none</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF"/>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>none</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>ASSOCIATED_RESET</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET"/>
-          <spirit:vendorExtensions>
-            <xilinx:parameterInfo>
-              <xilinx:parameterUsage>none</xilinx:parameterUsage>
-            </xilinx:parameterInfo>
-          </spirit:vendorExtensions>
-        </spirit:parameter>
-        <spirit:parameter>
-          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ">0</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -720,11 +599,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 01 20:24:42 UTC 2022</spirit:value>
+            <spirit:value>Tue Apr 05 01:47:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3eb1396c</spirit:value>
+            <spirit:value>9:a5c4c5c5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -735,7 +614,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3eb1396c</spirit:value>
+            <spirit:value>9:a5c4c5c5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -751,11 +630,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 01 20:24:42 UTC 2022</spirit:value>
+            <spirit:value>Tue Apr 05 01:47:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3eb1396c</spirit:value>
+            <spirit:value>9:a5c4c5c5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -771,11 +650,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 01 20:24:42 UTC 2022</spirit:value>
+            <spirit:value>Tue Apr 05 01:47:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bf9087a5</spirit:value>
+            <spirit:value>9:74ce6a6b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -791,11 +670,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 01 20:24:42 UTC 2022</spirit:value>
+            <spirit:value>Tue Apr 05 01:47:19 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bf9087a5</spirit:value>
+            <spirit:value>9:74ce6a6b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -809,11 +688,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 01 20:24:42 UTC 2022</spirit:value>
+            <spirit:value>Tue Apr 05 01:47:20 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3eb1396c</spirit:value>
+            <spirit:value>9:a5c4c5c5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -827,11 +706,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Apr 01 20:26:25 UTC 2022</spirit:value>
+            <spirit:value>Tue Apr 05 01:48:51 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3eb1396c</spirit:value>
+            <spirit:value>9:a5c4c5c5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1185,32 +1064,6 @@
           </spirit:wireTypeDefs>
         </spirit:wire>
       </spirit:port>
-      <spirit:port>
-        <spirit:name>s00_axi_aclk</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>s00_axi_aresetn</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
@@ -1247,11 +1100,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/2e00/hdl/SPI_ip_v1_0_S00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/a281/hdl/SPI_ip_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2e00/hdl/SPI_ip_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/a281/src/dff.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/a281/hdl/SPI_ip_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1266,11 +1123,15 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/2e00/hdl/SPI_ip_v1_0_S00_AXI.v</spirit:name>
+        <spirit:name>../../ipshared/a281/hdl/SPI_ip_v1_0_S00_AXI.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2e00/hdl/SPI_ip_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/a281/src/dff.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/a281/hdl/SPI_ip_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1406,10 +1267,44 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>axi4_pl_SPI_ip_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>11</xilinx:coreRevision>
+      <xilinx:coreRevision>14</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:SPI_ip:1.0_ARCHIVE_LOCATION">c:/Xilinx/Vivado/projects/ip_repo/SPI_ip_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="xilinx.com:user:axi4_pl_SPI_ip:1.0_ARCHIVE_LOCATION">c:/Docs/gyro_tester_gold/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4fc73c65_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1d78b0ed_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1fc0b094_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1e0792ad_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@26a8bc43_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4d21fd9f_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3784fd27_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e034dfd_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7a03bcdc_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b66b3bf_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fe3e117_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32685333_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b903a45_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@dc5c84a_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5c92266c_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@32c20211_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2524d4ca_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5960c129_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69de6480_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1bc4d0f6_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1c1a62c9_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@526f1e41_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@d932f33_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fbf9b34_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10879a82_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@79de5e63_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@11644e46_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@35ca2586_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bcbbdd5_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69487d0c_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2b5faa7b_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@24cc50ab_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3a8e5371_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@384e42a9_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
@@ -1418,7 +1313,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RSTN.POLARITY" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH" xilinx:valueSource="auto" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -1442,7 +1337,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_READ_THREADS" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_OUTSTANDING" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.NUM_WRITE_THREADS" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PHASE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.PROTOCOL" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.READ_WRITE_MODE" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.RUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
@@ -1452,22 +1347,14 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WIZ_NUM_REG" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_PORT" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_CLK.PHASE" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S00_AXI_RST.POLARITY" xilinx:valuePermission="bd"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7a63f3fc"/>
+      <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="41297713"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="21310c85"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="a9da2147"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3fb1bbae"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="b19f0099"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="6992ea72"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="cf2933c1"/>
     </xilinx:packagingInfo>

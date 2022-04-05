@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_2_xbar_0_synth_1" LaunchDir="/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" SubmitCmd="bsub -R &quot;select[os == lin &amp;&amp; type == X86_64 &amp;&amp; (osdistro == rhel || osdistro == centos) &amp;&amp; (osver == ws7)]&quot; -N -q medium" KillCmd="bkill"/>
+	<Run Id="design_2_RxFIFO_0_synth_1" LaunchDir="/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_RxFIFO_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" SubmitCmd="bsub -R &quot;select[os == lin &amp;&amp; type == X86_64 &amp;&amp; (osdistro == rhel || osdistro == centos) &amp;&amp; (osver == ws7)]&quot; -N -q medium" KillCmd="bkill"/>
+	<Run Id="synth_2" LaunchDir="/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" SubmitCmd="bsub -R &quot;select[os == lin &amp;&amp; type == X86_64 &amp;&amp; (osdistro == rhel || osdistro == centos) &amp;&amp; (osver == ws7)]&quot; -N -q medium" KillCmd="bkill">
+		<Parent Id="design_2_xbar_0_synth_1"/>
+		<Parent Id="design_2_RxFIFO_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

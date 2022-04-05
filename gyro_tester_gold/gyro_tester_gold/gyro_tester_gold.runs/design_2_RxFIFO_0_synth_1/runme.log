@@ -24,40 +24,40 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 238462
-WARNING: [Synth 8-2507] parameter declaration becomes local in axis_stream_txfifo_v2_0_S00_AXIS with formal parameter declaration list [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_txfifo_v2_0_S00_AXIS.sv:56]
-WARNING: [Synth 8-2306] macro IVAL redefined [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:36]
-WARNING: [Synth 8-2507] parameter declaration becomes local in gen_async_que with formal parameter declaration list [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/gen_async_que.sv:33]
+INFO: [Synth 8-7075] Helper process launched with PID 160442
+WARNING: [Synth 8-2507] parameter declaration becomes local in axis_stream_txfifo_v2_0_S00_AXIS with formal parameter declaration list [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/axis_stream_txfifo_2.0/hdl/axis_stream_txfifo_v2_0_S00_AXIS.sv:56]
+WARNING: [Synth 8-2507] parameter declaration becomes local in gen_async_que with formal parameter declaration list [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/gen_async_que.sv:33]
+WARNING: [Synth 8-2306] macro IVAL redefined [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:36]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2948.844 ; gain = 0.000 ; free physical = 19047 ; free virtual = 284608
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2948.848 ; gain = 0.000 ; free physical = 121791 ; free virtual = 531347
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_2_RxFIFO_0' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_RxFIFO_0/synth/design_2_RxFIFO_0.sv:57]
-INFO: [Synth 8-6157] synthesizing module 'axis_stream_fifo_v1_0' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0.sv:9]
-INFO: [Synth 8-6157] synthesizing module 'axis_stream_fifo_v1_0_S00_AXI' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-226] default block is never used [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v:236]
-INFO: [Synth 8-226] default block is never used [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v:377]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v:229]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v:230]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v:231]
-INFO: [Synth 8-6155] done synthesizing module 'axis_stream_fifo_v1_0_S00_AXI' (1#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'axis_stream_txfifo_v2_0_S00_AXIS' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_txfifo_v2_0_S00_AXIS.sv:4]
-INFO: [Synth 8-6155] done synthesizing module 'axis_stream_txfifo_v2_0_S00_AXIS' (2#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_txfifo_v2_0_S00_AXIS.sv:4]
-INFO: [Synth 8-6157] synthesizing module 'gen_async_que' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/gen_async_que.sv:19]
-INFO: [Synth 8-6157] synthesizing module 'syncr' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:23]
-WARNING: [Synth 8-6014] Unused sequential element sync_3stg_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:53]
-WARNING: [Synth 8-6014] Unused sequential element sync_4stg_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:54]
-INFO: [Synth 8-6155] done synthesizing module 'syncr' (3#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'syncr__parameterized0' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:23]
-WARNING: [Synth 8-6014] Unused sequential element sync_3stg_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:53]
-WARNING: [Synth 8-6014] Unused sequential element sync_4stg_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:54]
-INFO: [Synth 8-6155] done synthesizing module 'syncr__parameterized0' (3#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/syncr.sv:23]
-WARNING: [Synth 8-6014] Unused sequential element r_bnext_q_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/gen_async_que.sv:158]
-INFO: [Synth 8-6155] done synthesizing module 'gen_async_que' (4#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/src/gen_async_que.sv:19]
-WARNING: [Synth 8-3848] Net dbg_word0_int in module/entity axis_stream_fifo_v1_0 does not have driver. [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0.sv:64]
-WARNING: [Synth 8-3848] Net dbg_word1_int in module/entity axis_stream_fifo_v1_0 does not have driver. [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0.sv:65]
-WARNING: [Synth 8-3848] Net dbg_word2_int in module/entity axis_stream_fifo_v1_0 does not have driver. [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0.sv:66]
-WARNING: [Synth 8-3848] Net dbg_word3_int in module/entity axis_stream_fifo_v1_0 does not have driver. [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0.sv:67]
-INFO: [Synth 8-6155] done synthesizing module 'axis_stream_fifo_v1_0' (5#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/84ab/hdl/axis_stream_fifo_v1_0.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'axis_stream_fifo_v1_0' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/hdl/axis_stream_fifo_v1_0.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'axis_stream_fifo_v1_0_S00_AXI' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/axis_stream_fifo_v1_0_S00_AXI.sv:4]
+INFO: [Synth 8-226] default block is never used [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/axis_stream_fifo_v1_0_S00_AXI.sv:236]
+INFO: [Synth 8-226] default block is never used [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/axis_stream_fifo_v1_0_S00_AXI.sv:377]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/axis_stream_fifo_v1_0_S00_AXI.sv:229]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/axis_stream_fifo_v1_0_S00_AXI.sv:230]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/axis_stream_fifo_v1_0_S00_AXI.sv:231]
+INFO: [Synth 8-6155] done synthesizing module 'axis_stream_fifo_v1_0_S00_AXI' (1#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/axis_stream_fifo_v1_0_S00_AXI.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'axis_stream_txfifo_v2_0_S00_AXIS' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/axis_stream_txfifo_2.0/hdl/axis_stream_txfifo_v2_0_S00_AXIS.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'axis_stream_txfifo_v2_0_S00_AXIS' (2#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/axis_stream_txfifo_2.0/hdl/axis_stream_txfifo_v2_0_S00_AXIS.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'gen_async_que' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/gen_async_que.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'syncr' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element sync_3stg_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element sync_4stg_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'syncr' (3#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'syncr__parameterized0' [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element sync_3stg_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element sync_4stg_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'syncr__parameterized0' (3#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/syncr.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element r_bnext_q_reg was removed.  [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/gen_async_que.sv:158]
+INFO: [Synth 8-6155] done synthesizing module 'gen_async_que' (4#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/src/gen_async_que.sv:19]
+WARNING: [Synth 8-3848] Net dbg_word0_int in module/entity axis_stream_fifo_v1_0 does not have driver. [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/hdl/axis_stream_fifo_v1_0.sv:64]
+WARNING: [Synth 8-3848] Net dbg_word1_int in module/entity axis_stream_fifo_v1_0 does not have driver. [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/hdl/axis_stream_fifo_v1_0.sv:65]
+WARNING: [Synth 8-3848] Net dbg_word2_int in module/entity axis_stream_fifo_v1_0 does not have driver. [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/hdl/axis_stream_fifo_v1_0.sv:66]
+WARNING: [Synth 8-3848] Net dbg_word3_int in module/entity axis_stream_fifo_v1_0 does not have driver. [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/hdl/axis_stream_fifo_v1_0.sv:67]
+INFO: [Synth 8-6155] done synthesizing module 'axis_stream_fifo_v1_0' (5#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ipshared/4645/hdl/axis_stream_fifo_v1_0.sv:9]
 INFO: [Synth 8-6155] done synthesizing module 'design_2_RxFIFO_0' (6#1) [/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_RxFIFO_0/synth/design_2_RxFIFO_0.sv:57]
 WARNING: [Synth 8-7129] Port S_AXIS_TSTRB[1] in module axis_stream_txfifo_v2_0_S00_AXIS is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXIS_TSTRB[0] in module axis_stream_txfifo_v2_0_S00_AXIS is either unconnected or has no load
@@ -68,47 +68,47 @@ WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module axis_stream_fifo_v1_0_S00
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module axis_stream_fifo_v1_0_S00_AXI is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module axis_stream_fifo_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2948.852 ; gain = 0.008 ; free physical = 16195 ; free virtual = 281773
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2948.855 ; gain = 0.008 ; free physical = 123389 ; free virtual = 531827
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2948.852 ; gain = 0.008 ; free physical = 19369 ; free virtual = 284950
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2948.855 ; gain = 0.008 ; free physical = 124955 ; free virtual = 533396
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2948.852 ; gain = 0.008 ; free physical = 19371 ; free virtual = 284952
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2948.855 ; gain = 0.008 ; free physical = 124954 ; free virtual = 533395
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2948.852 ; gain = 0.000 ; free physical = 19472 ; free virtual = 285053
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2948.855 ; gain = 0.000 ; free physical = 124913 ; free virtual = 533354
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2964.871 ; gain = 0.000 ; free physical = 19588 ; free virtual = 285334
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2964.875 ; gain = 0.000 ; free physical = 126432 ; free virtual = 534913
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2964.875 ; gain = 0.004 ; free physical = 19504 ; free virtual = 285258
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2964.879 ; gain = 0.004 ; free physical = 126436 ; free virtual = 534917
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2964.875 ; gain = 16.031 ; free physical = 21181 ; free virtual = 286778
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2964.879 ; gain = 16.031 ; free physical = 126015 ; free virtual = 534545
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2964.875 ; gain = 16.031 ; free physical = 21177 ; free virtual = 286774
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2964.879 ; gain = 16.031 ; free physical = 126015 ; free virtual = 534544
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2964.875 ; gain = 16.031 ; free physical = 21161 ; free virtual = 286759
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2964.879 ; gain = 16.031 ; free physical = 126022 ; free virtual = 534552
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 20794 ; free virtual = 286393
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 125948 ; free virtual = 534444
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -221,7 +221,7 @@ WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_2_RxFIFO_0 is ei
 WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module design_2_RxFIFO_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module design_2_RxFIFO_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 21903 ; free virtual = 287512
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126382 ; free virtual = 534832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -242,13 +242,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 21674 ; free virtual = 286967
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126528 ; free virtual = 535041
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 21687 ; free virtual = 286983
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126536 ; free virtual = 535050
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -273,7 +273,7 @@ INFO: [Synth 8-7052] The timing for the instance inst/u_rx_async_stream_fifo/rgf
 INFO: [Synth 8-7052] The timing for the instance inst/u_rx_async_stream_fifo/rgfile_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/u_rx_async_stream_fifo/rgfile_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 21725 ; free virtual = 287024
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126541 ; free virtual = 535060
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -291,37 +291,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 23581 ; free virtual = 288874
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126077 ; free virtual = 534770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 23581 ; free virtual = 288874
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126075 ; free virtual = 534768
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 23579 ; free virtual = 288871
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126067 ; free virtual = 534760
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 23579 ; free virtual = 288871
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126066 ; free virtual = 534759
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 23577 ; free virtual = 288869
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126066 ; free virtual = 534757
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 23577 ; free virtual = 288869
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126064 ; free virtual = 534756
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -352,18 +352,18 @@ Report Cell Usage:
 |13    |FDSE     |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 23575 ; free virtual = 288868
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126061 ; free virtual = 534754
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2964.883 ; gain = 0.016 ; free physical = 23609 ; free virtual = 288902
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.883 ; gain = 16.039 ; free physical = 23624 ; free virtual = 288917
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2964.887 ; gain = 0.016 ; free physical = 126072 ; free virtual = 534765
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2964.887 ; gain = 16.039 ; free physical = 126073 ; free virtual = 534766
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2964.883 ; gain = 0.000 ; free physical = 23714 ; free virtual = 289007
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2964.887 ; gain = 0.000 ; free physical = 126129 ; free virtual = 534821
 INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 8 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2964.883 ; gain = 0.000 ; free physical = 24180 ; free virtual = 289472
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2964.887 ; gain = 0.000 ; free physical = 124886 ; free virtual = 533579
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -371,10 +371,10 @@ Synth Design complete, checksum: 829f9650
 INFO: [Common 17-83] Releasing license: Synthesis
 58 Infos, 74 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:35 . Memory (MB): peak = 2964.883 ; gain = 22.168 ; free physical = 24259 ; free virtual = 289552
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:34 . Memory (MB): peak = 2964.887 ; gain = 22.168 ; free physical = 124519 ; free virtual = 533213
 INFO: [Common 17-1381] The checkpoint '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_RxFIFO_0_synth_1/design_2_RxFIFO_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_2_RxFIFO_0, cache-ID = 2016a672f82613ed
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_2_RxFIFO_0, cache-ID = ba49801673f5e86a
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_RxFIFO_0_synth_1/design_2_RxFIFO_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_2_RxFIFO_0_utilization_synth.rpt -pb design_2_RxFIFO_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  1 13:26:37 2022...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  4 17:41:08 2022...

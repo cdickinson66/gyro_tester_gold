@@ -1,193 +1,167 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Apr  1 09:14:37 2022
-# Process ID: 49263
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Apr  4 16:20:58 2022
+# Process ID: 45920
 # Current directory: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold
 # Command line: vivado
 # Log file: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/vivado.log
 # Journal file: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/vivado.jou
+# Running On: xsjcdickins40x, OS: Linux, CPU Frequency: 2600.248 MHz, CPU Physical cores: 8, Host memory: 33556 MB
 #-----------------------------------------------------------
 start_gui
 open_project /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
 WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.2_0614_1954/installs/lin64/Vivado/2018.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'design_2_RxFIFO_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_RxFIFO_0/design_2_RxFIFO_0.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_RxFIFO_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_RxFIFO_0/design_2_RxFIFO_0_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_RxFIFO_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_RxFIFO_0/design_2_RxFIFO_0_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_RxFIFO_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_RxFIFO_0/design_2_RxFIFO_0_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_RxFIFO_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_RxFIFO_0/design_2_RxFIFO_0_sim_netlist.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_BiDirChannels_0_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_BiDirChannels_0_0/design_2_BiDirChannels_0_0.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_BiDirChannels_0_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_BiDirChannels_0_0/design_2_BiDirChannels_0_0_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_BiDirChannels_0_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_BiDirChannels_0_0/design_2_BiDirChannels_0_0_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_BiDirChannels_0_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_BiDirChannels_0_0/design_2_BiDirChannels_0_0_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_2_BiDirChannels_0_0' generated file not found '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_BiDirChannels_0_0/design_2_BiDirChannels_0_0_sim_netlist.vhdl'. Please regenerate to continue.
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 6380.379 ; gain = 187.480 ; free physical = 19767 ; free virtual = 26131
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:20 . Memory (MB): peak = 8076.438 ; gain = 111.461 ; free physical = 16933 ; free virtual = 26167
 update_compile_order -fileset sources_1
 open_bd_design {/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd}
-Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
-Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - clk_reset_domain
-Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
-Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
-Adding cell -- xilinx.com:ip:smartconnect:1.0 - axi_smc
-Adding cell -- xilinx.com:user:axi4_pl_SPI_ip:1.0 - SPI_ip_0
-Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - txclk_reset_domain
-Adding cell -- xilinx.com:user:BiDirChannels:1.0 - BiDirChannels_0
-Adding cell -- xilinx.com:user:axis_stream_fifo:1.0 - RxFIFO
-Adding cell -- user.org:user:axis_stream_txfifo:2.0 - TxFIFO
-Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Successfully read diagram <design_2> from BD file </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd>
-open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 6659.547 ; gain = 0.000 ; free physical = 19607 ; free virtual = 26026
-set_msg_config -suppress -id {Synth 8-5799} -string {{CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'insti_0' to logic} } 
-launch_runs synth_2 -lsf {bsub -R select[type=X86_64] -N -q medium}
-CRITICAL WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_2_axi_smc_0: The device(s) attached to /S00_AXI do not share a common clock source with this smartconnect instance.   Re-customize this AXI SmartConnect instance to add a new clock pin and connect it to the same clock source of the IP attached to /S00_AXI to prevent futher clock DRC violations.
-CRITICAL WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_2_axi_smc_0: The device(s) attached to /S01_AXI do not share a common clock source with this smartconnect instance.   Re-customize this AXI SmartConnect instance to add a new clock pin and connect it to the same clock source of the IP attached to /S01_AXI to prevent futher clock DRC violations.
-CRITICAL WARNING: [xilinx.com:ip:smartconnect:1.0-1] design_2_axi_smc_0: The device(s) attached to /S02_AXI do not share a common clock source with this smartconnect instance.   Re-customize this AXI SmartConnect instance to add a new clock pin and connect it to the same clock source of the IP attached to /S02_AXI to prevent futher clock DRC violations.
+Reading block design file </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd>...
+Adding component instance block -- xilinx.com:user:axi4_pl_SPI_ip:1.0 - SPI_ip_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - AXI_Register_Demux
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- user.org:user:axis_stream_txfifo:2.0 - TxFIFO
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - txclk_reset_domain
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - clk_reset_domain
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
+WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_MM2S. Setting parameter on /axi_dma_0/M_AXIS_MM2S failed
+Adding component instance block -- xilinx.com:user:BiDirChannels:1.0 - BiDirChannels_0
+Adding component instance block -- xilinx.com:user:axis_stream_fifo:1.0 - RxFIFO
+Successfully read diagram <design_2> from block design file </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd>
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 8332.566 ; gain = 0.000 ; free physical = 14373 ; free virtual = 23649
+reset_run design_2_xbar_0_synth_1
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/utils_1/imports/synth_2/design_2_wrapper.dcp with file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/design_2_wrapper.dcp
+launch_runs synth_2 -cluster_configuration lsf
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/AXI_Register_Demux/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/AXI_Register_Demux/M00_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /AXI_Register_Demux/xbar/M00_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /AXI_Register_Demux/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_2_smartconnect_0_0: SmartConnect design_2_smartconnect_0_0 is in High-performance Mode.
 INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
-xit::source_ipfile: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 6659.547 ; gain = 0.000 ; free physical = 19578 ; free virtual = 25988
-CRITICAL WARNING: [BD 41-1761] Reset pin '/BiDirChannels_0/rst_n' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+CRITICAL WARNING: [BD 41-1761] Reset pin '/BiDirChannels_0/tx_rstn' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/BiDirChannels_0/txclk
+/BiDirChannels_0/MCK_P
 /BiDirChannels_0/MCK_N
 /BiDirChannels_0/SYNCK
 
-CRITICAL WARNING: [BD 41-1732] Bus interface '/TxFIFO/S00_AXIS' is found to be associated with multiple clock-pins. This may prevent design from functioning correctly. List of associated clock-pins:
-/TxFIFO/clk
-/TxFIFO/txclk
-
-.
-CRITICAL WARNING: [BD 41-1732] Bus interface '/RxFIFO/S00_AXIS' is found to be associated with multiple clock-pins. This may prevent design from functioning correctly. List of associated clock-pins:
-/RxFIFO/clk
-/RxFIFO/txclk
-
-.
-CRITICAL WARNING: [BD 41-1732] Bus interface '/BiDirChannels_0/S00_AXIS' is found to be associated with multiple clock-pins. This may prevent design from functioning correctly. List of associated clock-pins:
-/BiDirChannels_0/clk
-/BiDirChannels_0/txclk
-
-.
-ERROR: [BD 41-237] Bus Interface property CLK_DOMAIN does not match between /TxFIFO/S00_AXIS(design_2_BiDirChannels_0_0_txclk) and /axi_dma_0/M_AXIS_MM2S(design_2_processing_system7_0_0_FCLK_CLK0)
-ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd 
-ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
-ipx::edit_ip_in_project -upgrade true -name axis_stream_txfifo_v2_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_txfifo_v2_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.2_0614_1954/installs/lin64/Vivado/2018.2/data/ip'.
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6842.660 ; gain = 0.000 ; free physical = 19476 ; free virtual = 25888
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/synth/design_2.v
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/sim/design_2.v
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v
+Exporting to file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/hw_handoff/design_2_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/synth/design_2_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RxFIFO .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_5/design_2_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_0/design_2_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_1/design_2_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_2/design_2_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_3/design_2_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_4/design_2_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m05_couplers/auto_pc .
+Exporting to file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Hardware Definition File /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_0, cache-ID = c32a61d99b199734; cache size = 35.795 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_1, cache-ID = c32a61d99b199734; cache size = 35.795 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_2, cache-ID = c32a61d99b199734; cache size = 35.795 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_3, cache-ID = c32a61d99b199734; cache size = 35.795 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_4, cache-ID = c32a61d99b199734; cache size = 35.795 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_5, cache-ID = b12bbf366ae67349; cache size = 35.795 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_smartconnect_0_0, cache-ID = 7921f90d7fc3c1bd; cache size = 35.795 MB.
+[Mon Apr  4 16:24:33 2022] Launched design_2_xbar_0_synth_1, design_2_RxFIFO_0_synth_1...
+Run output will be captured here:
+design_2_xbar_0_synth_1: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_xbar_0_synth_1/runme.log
+design_2_RxFIFO_0_synth_1: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_RxFIFO_0_synth_1/runme.log
+[Mon Apr  4 16:24:33 2022] Launched synth_2...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/runme.log
+launch_runs: Time (s): cpu = 00:01:00 ; elapsed = 00:01:13 . Memory (MB): peak = 10052.527 ; gain = 334.832 ; free physical = 13606 ; free virtual = 22897
+update_ip_catalog -rebuild -scan_changes
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
 WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 6842.660 ; gain = 0.000 ; free physical = 19457 ; free virtual = 25869
-update_compile_order -fileset sources_1
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M01_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M02_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-launch_runs synth_1 -lsf {bsub -R select[type=X86_64] -N -q medium}
-[Fri Apr  1 09:20:31 2022] Launched synth_1...
-Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_txfifo_v2_0_project/axis_stream_txfifo_v2_0_project.runs/synth_1/runme.log
-set_property core_revision 7 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0
-CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. ''/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0' is not valid: Path is contained within another repository.'
-0
-report_ip_status -name ip_status 
-upgrade_ip -vlnv user.org:user:axis_stream_txfifo:2.0 [get_ips  design_2_axis_stream_txfifo_0_2] -log ip_upgrade.log
-Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
-INFO: [IP_Flow 19-1972] Upgraded design_2_axis_stream_txfifo_0_2 from axis_stream_txfifo_v2.0 2.0 to axis_stream_txfifo_v2.0 2.0
-Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips design_2_axis_stream_txfifo_0_2] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
+report_ip_status -name ip_status
 ipx::edit_ip_in_project -upgrade true -name axis_stream_fifo_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_fifo_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/component.xml
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.2_0614_1954/installs/lin64/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 10120.289 ; gain = 0.000 ; free physical = 13407 ; free virtual = 22712
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
 WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
 INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 6904.066 ; gain = 0.000 ; free physical = 19374 ; free virtual = 25813
+CRITICAL WARNING: [IP_Flow 19-3667] Component file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/hdl/axis_stream_fifo_v1_0_S00_AXI.v' does not exist. The file is ignored.
+CRITICAL WARNING: [IP_Flow 19-3667] Component file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/hdl/axis_stream_fifo_v1_0_S00_AXI.v' does not exist. The file is ignored.
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 10120.289 ; gain = 0.000 ; free physical = 13379 ; free virtual = 22685
 update_compile_order -fileset sources_1
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M00_AXIS -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-launch_runs synth_1 -lsf {bsub -R select[type=X86_64] -N -q medium}
-[Fri Apr  1 09:27:18 2022] Launched synth_1...
-Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_fifo_v1_0_project/axis_stream_fifo_v1_0_project.runs/synth_1/runme.log
-set_property core_revision 46 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
-INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'
-report_ip_status -name ip_status 
-upgrade_ip [get_ips  {design_2_axis_stream_txfifo_0_2 design_2_RxFIFO_0}] -log ip_upgrade.log
-Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_2_RxFIFO_0 (axis_stream_fifo_v1.0 1.0) from revision 45 to revision 46
-INFO: [IP_Flow 19-3422] Upgraded design_2_axis_stream_txfifo_0_2 (axis_stream_txfifo_v2.0 2.0) from revision 6 to revision 7
-Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips {design_2_axis_stream_txfifo_0_2 design_2_RxFIFO_0}] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-ipx::edit_ip_in_project -upgrade true -name axis_stream_fifo_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_fifo_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.2_0614_1954/installs/lin64/Vivado/2018.2/data/ip'.
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6906.066 ; gain = 0.000 ; free physical = 19432 ; free virtual = 25861
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
-WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 6906.066 ; gain = 0.000 ; free physical = 19428 ; free virtual = 25857
-update_compile_order -fileset sources_1
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M00_AXIS -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-update_compile_order -fileset sources_1
-add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/gen_async_que.sv
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/hdl/axis_stream_fifo_v1_0_S00_AXI.sv
 update_compile_order -fileset sources_1
 ipx::merge_project_changes files [ipx::current_core]
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
 WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/component.xml' ignored by IP packager.
-ipx::merge_project_changes hdl_parameters [ipx::current_core]
-WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
-WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/component.xml' ignored by IP packager.
-WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
-INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
-ipx::add_bus_parameter FREQ_HZ [ipx::get_bus_interfaces txclk -of_objects [ipx::current_core]]
-ipx::add_bus_parameter ASSOCIATED_RESET [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
-launch_runs synth_1 -lsf {bsub -R select[type=X86_64] -N -q medium}
-[Fri Apr  1 09:46:24 2022] Launched synth_1...
-Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_fifo_v1_0_project/axis_stream_fifo_v1_0_project.runs/synth_1/runme.log
-set_property core_revision 47 [ipx::current_core]
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/hdl/axis_stream_fifo_v1_0_S00_AXI.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/hdl/axis_stream_fifo_v1_0_S00_AXI.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+set_property core_revision 51 [ipx::current_core]
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-5905] All packaged files should be located below the IP definition file (xml)
+WARNING: [IP_Flow 19-5905] All packaged files should be located below the IP definition file (xml)
+INFO: [IP_Flow 19-7067] Note that bus interface 'txclk' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3157] Bus Interface 'tx_rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'tx_rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
 ipx::save_core [ipx::current_core]
 ipx::move_temp_component_back -component [ipx::current_core]
 close_project -delete
@@ -196,43 +170,629 @@ INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_te
 report_ip_status -name ip_status 
 upgrade_ip -vlnv xilinx.com:user:axis_stream_fifo:1.0 [get_ips  design_2_RxFIFO_0] -log ip_upgrade.log
 Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_2_RxFIFO_0 (axis_stream_fifo_v1.0 1.0) from revision 46 to revision 47
+INFO: [IP_Flow 19-3422] Upgraded design_2_RxFIFO_0 (axis_stream_fifo_v1.0 1.0) from revision 50 to revision 51
 Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
 INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
 export_ip_user_files -of_objects [get_ips design_2_RxFIFO_0] -no_script -sync -force -quiet
 report_ip_status -name ip_status 
-ipx::edit_ip_in_project -upgrade true -name axis_stream_fifo_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axis_stream_fifo_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_fifo_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name BiDirChannels_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/BiDirChannels_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/2018.2_0614_1954/installs/lin64/Vivado/2018.2/data/ip'.
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 6943.980 ; gain = 0.000 ; free physical = 19254 ; free virtual = 25702
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 10120.289 ; gain = 0.000 ; free physical = 13307 ; free virtual = 22616
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
 WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
 INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 6943.980 ; gain = 0.000 ; free physical = 19274 ; free virtual = 25722
+CRITICAL WARNING: [IP_Flow 19-3667] Component file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/hdl/BiDirChannels_v1_0_S00_AXI.v' does not exist. The file is ignored.
+CRITICAL WARNING: [IP_Flow 19-3667] Component file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/hdl/BiDirChannels_v1_0_S00_AXI.v' does not exist. The file is ignored.
+WARNING: [IP_Flow 19-469] Gui parameter('C_M00_AXIS_START_COUNT') creation is incomplete. Corresponding component parameter does not exist
+ERROR: [Ipptcl 7-17] Invalid Parameter 'C_M00_AXIS_START_COUNT'.
+ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+ERROR: [IP_Flow 19-3475] Tcl error in init_gui procedure for IP 'BiDirChannels_0'. ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 10120.289 ; gain = 0.000 ; free physical = 13295 ; free virtual = 22605
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
 update_compile_order -fileset sources_1
-ipx::associate_bus_interfaces -busif S00_AXI -clock txclk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXI -clock clk [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock clk -clear [ipx::current_core]
-ipx::associate_bus_interfaces -busif S00_AXIS -clock txclk [ipx::current_core]
-ipx::associate_bus_interfaces -busif M00_AXIS -clock clk [ipx::current_core]
-set_property core_revision 48 [ipx::current_core]
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/hdl/BiDirChannels_v1_0_S00_AXI.sv
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/hdl/BiDirChannels_v1_0_S00_AXI.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/hdl/BiDirChannels_v1_0_S00_AXI.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+set_property core_revision 118 [ipx::current_core]
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-7067] Note that bus interface 'txclk' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'SYNCK' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3152] Bus Interface 'SYNCK': ASSOCIATED_BUSIF bus '' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'MCK_N' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3152] Bus Interface 'MCK_N': ASSOCIATED_BUSIF bus '' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'MCK_P' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'MCK_P' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3157] Bus Interface 'tx_rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'tx_rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
 ipx::save_core [ipx::current_core]
 ipx::move_temp_component_back -component [ipx::current_core]
 close_project -delete
 update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
 INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'
 report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:axis_stream_fifo:1.0 [get_ips  design_2_RxFIFO_0] -log ip_upgrade.log
+upgrade_ip -vlnv xilinx.com:user:BiDirChannels:1.0 [get_ips  design_2_BiDirChannels_0_0] -log ip_upgrade.log
 Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_2_RxFIFO_0 (axis_stream_fifo_v1.0 1.0) from revision 47 to revision 48
+INFO: [IP_Flow 19-3422] Upgraded design_2_BiDirChannels_0_0 (BiDirChannels_v1.0 1.0) from revision 117 to revision 118
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_2_BiDirChannels_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name BiDirChannels_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/BiDirChannels_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 10234.738 ; gain = 0.000 ; free physical = 13134 ; free virtual = 22578
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [IP_Flow 19-469] Gui parameter('C_M00_AXIS_START_COUNT') creation is incomplete. Corresponding component parameter does not exist
+ERROR: [Ipptcl 7-17] Invalid Parameter 'C_M00_AXIS_START_COUNT'.
+ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+ERROR: [IP_Flow 19-3475] Tcl error in init_gui procedure for IP 'BiDirChannels_0'. ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 10234.738 ; gain = 0.000 ; free physical = 13148 ; free virtual = 22593
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/hdl/GyroInputOutputSerializer.sv
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src {/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/clock_divider_by_10.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/upCounter8Bits.sv}
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src {/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/register_2bits.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/upCounter12Bits.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/clock_divider_by_2.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/counter48Cycles.sv}
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/src {/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/dff.sv /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/mux_8x1_1bit.sv}
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml' ignored by IP packager.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+set_property core_revision 119 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-7067] Note that bus interface 'txclk' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'SYNCK' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3152] Bus Interface 'SYNCK': ASSOCIATED_BUSIF bus '' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'MCK_N' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3152] Bus Interface 'MCK_N': ASSOCIATED_BUSIF bus '' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'MCK_P' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'MCK_P' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3157] Bus Interface 'tx_rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'tx_rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:BiDirChannels:1.0 [get_ips  design_2_BiDirChannels_0_0] -log ip_upgrade.log
+Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_2_BiDirChannels_0_0 (BiDirChannels_v1.0 1.0) from revision 118 to revision 119
 Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
 INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
-export_ip_user_files -of_objects [get_ips design_2_RxFIFO_0] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_ips design_2_BiDirChannels_0_0] -no_script -sync -force -quiet
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+report_ip_status -name ip_status
+WARNING: [IP_Flow 19-469] Gui parameter('C_M00_AXIS_START_COUNT') creation is incomplete. Corresponding component parameter does not exist
+ERROR: [Ipptcl 7-17] Invalid Parameter 'C_M00_AXIS_START_COUNT'.
+ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+ERROR: [IP_Flow 19-3475] Tcl error in init_gui procedure for BD Cell 'BiDirChannels_0'. ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+
+ipx::edit_ip_in_project -upgrade true -name BiDirChannels_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/BiDirChannels_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 10256.547 ; gain = 0.000 ; free physical = 13126 ; free virtual = 22572
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [IP_Flow 19-469] Gui parameter('C_M00_AXIS_START_COUNT') creation is incomplete. Corresponding component parameter does not exist
+ERROR: [Ipptcl 7-17] Invalid Parameter 'C_M00_AXIS_START_COUNT'.
+ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+ERROR: [IP_Flow 19-3475] Tcl error in init_gui procedure for IP 'BiDirChannels_0'. ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 10256.547 ; gain = 0.000 ; free physical = 13127 ; free virtual = 22572
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+update_compile_order -fileset sources_1
+set_property core_revision 120 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-7067] Note that bus interface 'txclk' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'SYNCK' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3152] Bus Interface 'SYNCK': ASSOCIATED_BUSIF bus '' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'MCK_N' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3152] Bus Interface 'MCK_N': ASSOCIATED_BUSIF bus '' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'MCK_P' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'MCK_P' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3157] Bus Interface 'tx_rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'tx_rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'
 report_ip_status -name ip_status 
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  1 10:06:10 2022...
+upgrade_ip -vlnv xilinx.com:user:BiDirChannels:1.0 [get_ips  design_2_BiDirChannels_0_0] -log ip_upgrade.log
+Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_2_BiDirChannels_0_0 (BiDirChannels_v1.0 1.0) from revision 119 to revision 120
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_2_BiDirChannels_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/utils_1/imports/synth_2/design_2_wrapper.dcp with file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/design_2_wrapper.dcp
+launch_runs synth_2 -cluster_configuration lsf
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/AXI_Register_Demux/M00_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/AXI_Register_Demux/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /AXI_Register_Demux/xbar/M00_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /AXI_Register_Demux/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_2_smartconnect_0_0: SmartConnect design_2_smartconnect_0_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1761] Reset pin '/BiDirChannels_0/tx_rstn' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/BiDirChannels_0/txclk
+/BiDirChannels_0/MCK_P
+/BiDirChannels_0/MCK_N
+/BiDirChannels_0/SYNCK
+
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/synth/design_2.v
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/sim/design_2.v
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v
+Exporting to file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/hw_handoff/design_2_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/synth/design_2_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BiDirChannels_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RxFIFO .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_5/design_2_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_0/design_2_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_1/design_2_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_2/design_2_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_3/design_2_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_4/design_2_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m05_couplers/auto_pc .
+Exporting to file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Hardware Definition File /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_0, cache-ID = c32a61d99b199734; cache size = 35.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_1, cache-ID = c32a61d99b199734; cache size = 35.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_2, cache-ID = c32a61d99b199734; cache size = 35.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_3, cache-ID = c32a61d99b199734; cache size = 35.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_4, cache-ID = c32a61d99b199734; cache size = 35.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_5, cache-ID = b12bbf366ae67349; cache size = 35.430 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_smartconnect_0_0, cache-ID = 7921f90d7fc3c1bd; cache size = 35.430 MB.
+[Mon Apr  4 17:39:51 2022] Launched design_2_RxFIFO_0_synth_1, design_2_BiDirChannels_0_0_synth_1...
+Run output will be captured here:
+design_2_RxFIFO_0_synth_1: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_RxFIFO_0_synth_1/runme.log
+design_2_BiDirChannels_0_0_synth_1: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_BiDirChannels_0_0_synth_1/runme.log
+[Mon Apr  4 17:39:51 2022] Launched synth_2...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/runme.log
+launch_runs: Time (s): cpu = 00:00:49 ; elapsed = 00:01:08 . Memory (MB): peak = 10511.648 ; gain = 24.215 ; free physical = 13102 ; free virtual = 22545
+launch_runs impl_4 -cluster_configuration lsf
+[Mon Apr  4 17:43:03 2022] Launched impl_4...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/impl_4/runme.log
+ipx::edit_ip_in_project -upgrade true -name axi4_pl_SPI_ip_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axi4_pl_SPI_ip_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 10538.715 ; gain = 0.000 ; free physical = 12946 ; free virtual = 22402
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 10538.715 ; gain = 0.000 ; free physical = 12942 ; free virtual = 22398
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/src /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/common/dff.sv
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml' ignored by IP packager.
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-5654] Module 'SPI_ip_v1_0' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+set_property core_revision 12 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'
+ipx::edit_ip_in_project -upgrade true -name BiDirChannels_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/BiDirChannels_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 10538.715 ; gain = 0.000 ; free physical = 12925 ; free virtual = 22386
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [IP_Flow 19-469] Gui parameter('C_M00_AXIS_START_COUNT') creation is incomplete. Corresponding component parameter does not exist
+ERROR: [Ipptcl 7-17] Invalid Parameter 'C_M00_AXIS_START_COUNT'.
+ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+ERROR: [IP_Flow 19-3475] Tcl error in init_gui procedure for IP 'BiDirChannels_0'. ERROR: [Common 17-39] 'add_param' failed due to earlier errors.
+
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 10538.715 ; gain = 0.000 ; free physical = 12921 ; free virtual = 22382
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5101] Packaging a component with a SystemVerilog top file is not fully supported. Please refer to UG1118 'Creating and Packaging Custom IP'.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+set_property core_revision 121 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-7067] Note that bus interface 'txclk' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+INFO: [IP_Flow 19-7067] Note that bus interface 'SYNCK' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3152] Bus Interface 'SYNCK': ASSOCIATED_BUSIF bus '' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'MCK_N' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-3152] Bus Interface 'MCK_N': ASSOCIATED_BUSIF bus '' does not exist.
+INFO: [IP_Flow 19-7067] Note that bus interface 'MCK_P' has a fixed FREQ_HZ of '50000000'. This value will be respected whenever this IP is instantiated in IP Integrator.
+WARNING: [IP_Flow 19-5661] Bus Interface 'MCK_P' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-3157] Bus Interface 'rst_n': Bus parameter POLARITY is ACTIVE_LOW but port 'rst_n' is not *resetn - please double check the POLARITY setting.
+WARNING: [IP_Flow 19-3157] Bus Interface 'tx_rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'tx_rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_2_SPI_ip_0_0 design_2_BiDirChannels_0_0}] -log ip_upgrade.log
+Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_2_BiDirChannels_0_0 (BiDirChannels_v1.0 1.0) from revision 120 to revision 121
+INFO: [IP_Flow 19-3422] Upgraded design_2_SPI_ip_0_0 (axi4_pl_SPI_ip_v1.0 1.0) from revision 11 to revision 12
+WARNING: [IP_Flow 19-4707] Upgraded port order differs after port 's00_axi_aclk'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_2_SPI_ip_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_2_SPI_ip_0_0' has identified issues that may require user intervention. Please review the upgrade log '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {design_2_SPI_ip_0_0 design_2_BiDirChannels_0_0}] -no_script -sync -force -quiet
+ipx::edit_ip_in_project -upgrade true -name axi4_pl_SPI_ip_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axi4_pl_SPI_ip_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 10538.715 ; gain = 0.000 ; free physical = 12790 ; free virtual = 22255
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 10538.715 ; gain = 0.000 ; free physical = 12767 ; free virtual = 22232
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-5654] Module 'SPI_ip_v1_0' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (s00_axi_aresetn) was removed from the interface 'S00_AXI_RST'. Please review the IP interface 'S00_AXI_RST'.
+CRITICAL WARNING: [IP_Flow 19-4834] IP port (s00_axi_aclk) was removed from the interface 'S00_AXI_CLK'. Please review the IP interface 'S00_AXI_CLK'.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S00_AXI'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rstn'.
+set_property core_revision 13 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:axi4_pl_SPI_ip:1.0 [get_ips  design_2_SPI_ip_0_0] -log ip_upgrade.log
+Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_2_SPI_ip_0_0 (axi4_pl_SPI_ip_v1.0 1.0) from revision 12 to revision 13
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'S00_AXI_CLK'
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'S00_AXI_RST'
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_2_SPI_ip_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's00_axi_aclk'
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 's00_axi_aresetn'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_2_SPI_ip_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 's00_axi_aclk' is not found on the upgraded version of the cell '/SPI_ip_0'. Its connection to the net 'processing_system7_0_FCLK_CLK0' has been removed.
+CRITICAL WARNING: [BD 41-1167] The pin 's00_axi_aresetn' is not found on the upgraded version of the cell '/SPI_ip_0'. Its connection to the net 'rst_ps7_0_100M_peripheral_aresetn' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_2_SPI_ip_0_0' has identified issues that may require user intervention. Please review the upgrade log '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_2_SPI_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/utils_1/imports/synth_2/design_2_wrapper.dcp with file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/design_2_wrapper.dcp
+launch_runs synth_2 -cluster_configuration lsf
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/AXI_Register_Demux/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/AXI_Register_Demux/M00_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /AXI_Register_Demux/xbar/M00_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /AXI_Register_Demux/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_2_smartconnect_0_0: SmartConnect design_2_smartconnect_0_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1761] Reset pin '/BiDirChannels_0/tx_rstn' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/BiDirChannels_0/txclk
+/BiDirChannels_0/MCK_P
+/BiDirChannels_0/MCK_N
+/BiDirChannels_0/SYNCK
+
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/synth/design_2.v
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/sim/design_2.v
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SPI_ip_0 .
+Exporting to file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/hw_handoff/design_2_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/synth/design_2_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BiDirChannels_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_5/design_2_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_0/design_2_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_1/design_2_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_2/design_2_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_3/design_2_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_4/design_2_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m05_couplers/auto_pc .
+Exporting to file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Hardware Definition File /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_0, cache-ID = c32a61d99b199734; cache size = 36.245 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_1, cache-ID = c32a61d99b199734; cache size = 36.245 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_2, cache-ID = c32a61d99b199734; cache size = 36.245 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_3, cache-ID = c32a61d99b199734; cache size = 36.245 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_4, cache-ID = c32a61d99b199734; cache size = 36.245 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_5, cache-ID = b12bbf366ae67349; cache size = 36.245 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_smartconnect_0_0, cache-ID = 7921f90d7fc3c1bd; cache size = 36.245 MB.
+[Mon Apr  4 18:24:29 2022] Launched design_2_BiDirChannels_0_0_synth_1, design_2_SPI_ip_0_0_synth_1...
+Run output will be captured here:
+design_2_BiDirChannels_0_0_synth_1: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_BiDirChannels_0_0_synth_1/runme.log
+design_2_SPI_ip_0_0_synth_1: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_SPI_ip_0_0_synth_1/runme.log
+[Mon Apr  4 18:24:29 2022] Launched synth_2...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/runme.log
+launch_runs: Time (s): cpu = 00:00:54 ; elapsed = 00:01:26 . Memory (MB): peak = 10839.789 ; gain = 191.332 ; free physical = 12854 ; free virtual = 22323
+launch_runs impl_4 -cluster_configuration lsf
+[Mon Apr  4 18:28:06 2022] Launched impl_4...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/impl_4/runme.log
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:axi4_pl_SPI_ip:1.0 [get_ips  design_2_SPI_ip_0_0] -log ip_upgrade.log
+Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3420] Updated design_2_SPI_ip_0_0 to use current project options
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_2_SPI_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name axi4_pl_SPI_ip_v1_0_project -directory /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.tmp/axi4_pl_SPI_ip_v1_0_project /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/SPI_ip_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.0 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.0/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.1 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.1/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:2.2 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.2/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.3 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.3/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102_es2:part0:2.4 available at /home/cdickins/reuse/gyro_tester_gold-master/ip_repo/board_files/zcu102/es2/2.4/board.xml as part xczu9eg-ffvb1156-2-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /proj/xbuilds/SWIP/2021.2_1021_0703/installs/lin64/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 10924.992 ; gain = 0.000 ; free physical = 12724 ; free virtual = 22213
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/axis_stream_txfifo_2.0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/Handler_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 10924.992 ; gain = 0.000 ; free physical = 12723 ; free virtual = 22211
+update_compile_order -fileset sources_1
+set_property core_revision 14 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-3157] Bus Interface 'rstn': Bus parameter POLARITY is ACTIVE_LOW but port 'rstn' is not *resetn - please double check the POLARITY setting.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/cdickins/reuse/gyro_tester_gold-master/ip_repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/home/cdickins/reuse/gyro_tester_gold-master/ip_repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:axi4_pl_SPI_ip:1.0 [get_ips  design_2_SPI_ip_0_0] -log ip_upgrade.log
+Upgrading '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_2_SPI_ip_0_0 (axi4_pl_SPI_ip_v1.0 1.0) from revision 13 to revision 14
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_2_SPI_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_2
+INFO: [Project 1-1161] Replacing file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/utils_1/imports/synth_2/design_2_wrapper.dcp with file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/design_2_wrapper.dcp
+launch_runs synth_2 -cluster_configuration lsf
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/AXI_Register_Demux/M06_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/processing_system7_0/Data' to master interface '/AXI_Register_Demux/M00_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /AXI_Register_Demux/xbar/M00_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /AXI_Register_Demux/xbar/M06_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_2_smartconnect_0_0: SmartConnect design_2_smartconnect_0_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+CRITICAL WARNING: [BD 41-1761] Reset pin '/BiDirChannels_0/tx_rstn' is found to be associated with multiple clock pins, which are not compatible w.r.t frequency, phase and clock-domain. This may prevent design from functioning correctly. Please ensure same reset pin is either not associated with different clock pins or all associated clock pins are driven by same or compatible clock source(s). List of associated clock pins:
+/BiDirChannels_0/txclk
+/BiDirChannels_0/MCK_P
+/BiDirChannels_0/MCK_N
+/BiDirChannels_0/SYNCK
+
+Wrote  : </home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/design_2.bd> 
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/synth/design_2.v
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/sim/design_2.v
+VHDL Output written to : /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SPI_ip_0 .
+Exporting to file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/hw_handoff/design_2_smartconnect_0_0.hwh
+Generated Hardware Definition File /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/synth/design_2_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_5/design_2_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_0/design_2_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_1/design_2_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_2/design_2_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_3/design_2_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_auto_pc_4/design_2_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AXI_Register_Demux/m05_couplers/auto_pc .
+Exporting to file /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Hardware Definition File /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_0, cache-ID = c32a61d99b199734; cache size = 36.611 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_1, cache-ID = c32a61d99b199734; cache size = 36.611 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_2, cache-ID = c32a61d99b199734; cache size = 36.611 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_3, cache-ID = c32a61d99b199734; cache size = 36.611 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_4, cache-ID = c32a61d99b199734; cache size = 36.611 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_auto_pc_5, cache-ID = b12bbf366ae67349; cache size = 36.611 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_2_smartconnect_0_0, cache-ID = 7921f90d7fc3c1bd; cache size = 36.611 MB.
+[Mon Apr  4 18:47:34 2022] Launched design_2_SPI_ip_0_0_synth_1...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/design_2_SPI_ip_0_0_synth_1/runme.log
+[Mon Apr  4 18:47:34 2022] Launched synth_2...
+Run output will be captured here: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/runme.log
+launch_runs: Time (s): cpu = 00:00:57 ; elapsed = 00:01:15 . Memory (MB): peak = 11081.746 ; gain = 156.754 ; free physical = 12720 ; free virtual = 22205

@@ -608,7 +608,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b3e51cea</spirit:value>
+            <spirit:value>5b954a3c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -624,7 +624,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b3e51cea</spirit:value>
+            <spirit:value>5b954a3c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1086,41 +1086,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>m00_axis_tdata</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) - 1)">15</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m00_axis_tstrb</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">1</spirit:left>
-            <spirit:right spirit:format="long">0</spirit:right>
-          </spirit:vector>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m00_axis_tlast</spirit:name>
+        <spirit:name>s00_axis_tready</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -1130,35 +1096,6 @@
               <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m00_axis_tvalid</spirit:name>
-        <spirit:wire>
-          <spirit:direction>out</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-        </spirit:wire>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>m00_axis_tready</spirit:name>
-        <spirit:wire>
-          <spirit:direction>in</spirit:direction>
-          <spirit:wireTypeDefs>
-            <spirit:wireTypeDef>
-              <spirit:typeName>wire</spirit:typeName>
-              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
-              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
-            </spirit:wireTypeDef>
-          </spirit:wireTypeDefs>
-          <spirit:driver>
-            <spirit:defaultValue spirit:format="long">1</spirit:defaultValue>
-          </spirit:driver>
         </spirit:wire>
       </spirit:port>
       <spirit:port>
@@ -1395,7 +1332,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>s00_axis_tready</spirit:name>
+        <spirit:name>m00_axis_tvalid</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:wireTypeDefs>
@@ -1405,6 +1342,69 @@
               <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) - 1)">15</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">1</spirit:defaultValue>
+          </spirit:driver>
         </spirit:wire>
       </spirit:port>
     </spirit:ports>
@@ -1460,20 +1460,100 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/BiDirChannels_v1_0_S00_AXI.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:name>src/BiDirChannels_v1_0_S00_AXI.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/GyroInputOutputSerializer.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/clock_divider_by_10.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/clock_divider_by_2.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/counter48Cycles.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/dff.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/gen_sync_que_srl.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/mux_8x1_1bit.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/register_2bits.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/upCounter12Bits.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/upCounter8Bits.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/BiDirChannels_v1_0.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5725d274</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_a29557bf</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>hdl/BiDirChannels_v1_0_S00_AXI.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:name>src/BiDirChannels_v1_0_S00_AXI.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/GyroInputOutputSerializer.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/clock_divider_by_10.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/clock_divider_by_2.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/counter48Cycles.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/dff.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/gen_sync_que_srl.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/mux_8x1_1bit.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/register_2bits.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/upCounter12Bits.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/upCounter8Bits.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/BiDirChannels_v1_0.sv</spirit:name>
@@ -1621,8 +1701,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>BiDirChannels_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>116</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2022-04-01T17:33:38Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>121</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-04-05T01:15:05Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:BiDirChannels:1.0_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@2209ef83_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
@@ -1649,14 +1729,91 @@
         <xilinx:tag xilinx:name="ui.data.coregen.df@2b08b5fc_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@6c34d935_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.df@458bf3e_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6f4aabed_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6c12d696_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7cc20dc8_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4f29958b_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2fcb72c8_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@fb8b01_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27ed0f77_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65e7f957_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@69c5dd50_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@288ead0_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@51039a0e_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@29ea7682_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7e28624d_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5e61245c_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@154822d9_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6ed062ca_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6a006d92_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5280d30_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7c6a158f_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4a7e7618_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@17623036_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a310be6_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40a158fa_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1ef7903_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7eb28d5b_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@40fae753_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@60601193_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@316257f2_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10a9b59f_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@1af86152_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@14f01ada_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b9a5985_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@425011a1_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2aa86194_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@47eef453_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@705310ca_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7f237d54_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@46042115_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@64984a6a_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43f6a698_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@9c2a8aa_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@e564722_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6b43a483_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a24973_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43846e77_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@730c6750_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@34a496d8_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3502f05f_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4ec0b04a_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@78ff74ff_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4840812e_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4239757e_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@241ad229_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@8ade89d_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@54e333b8_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@43f37853_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@7bbc2df4_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@27b08c6b_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@37f3d79f_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@10392ef_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4c921d8e_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4702324e_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38aadfea_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6e267a83_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@2cc21b7e_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@254f4f43_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@a80b578_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@6007cedc_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@3d02523b_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5b13a834_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@5a3d4ed9_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@4bcc77a4_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38c6988e_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@65d9eafb_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@178f1cff_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@38f155dd_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.df@bb00dd8_ARCHIVE_LOCATION">/home/cdickins/reuse/gyro_tester_gold-master/ip_repo/BiDirChannels_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2021.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="596993b9"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="64603a7e"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="f08b5bba"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e1ce7091"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="0e493899"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="48440ad7"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ec990f46"/>
     </xilinx:packagingInfo>

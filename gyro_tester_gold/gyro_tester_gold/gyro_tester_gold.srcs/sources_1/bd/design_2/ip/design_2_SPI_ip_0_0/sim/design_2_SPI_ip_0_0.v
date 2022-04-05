@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:axi4_pl_SPI_ip:1.0
-// IP Revision: 11
+// IP Revision: 14
 
 `timescale 1ns/1ps
 
@@ -77,12 +77,10 @@ module design_2_SPI_ip_0_0 (
   s00_axi_rdata,
   s00_axi_rresp,
   s00_axi_rvalid,
-  s00_axi_rready,
-  s00_axi_aclk,
-  s00_axi_aresetn
+  s00_axi_rready
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET rstn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rstn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -131,12 +129,6 @@ output wire s00_axi_rvalid;
 m7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *)
 input wire s00_axi_rready;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN design_2_processing_system7_0_0_FCLK_CLK0, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK" *)
-input wire s00_axi_aclk;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S00_AXI_RST RST" *)
-input wire s00_axi_aresetn;
 
   SPI_ip_v1_0 #(
     .C_S00_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
@@ -165,8 +157,6 @@ input wire s00_axi_aresetn;
     .s00_axi_rdata(s00_axi_rdata),
     .s00_axi_rresp(s00_axi_rresp),
     .s00_axi_rvalid(s00_axi_rvalid),
-    .s00_axi_rready(s00_axi_rready),
-    .s00_axi_aclk(s00_axi_aclk),
-    .s00_axi_aresetn(s00_axi_aresetn)
+    .s00_axi_rready(s00_axi_rready)
   );
 endmodule

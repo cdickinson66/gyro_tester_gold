@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Fri Apr  1 13:48:02 2022
-# Process ID: 10262
+# Start of session at: Mon Apr  4 18:49:00 2022
+# Process ID: 15669
 # Current directory: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2
 # Command line: vivado -log design_2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_wrapper.tcl
 # Log file: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/design_2_wrapper.vds
 # Journal file: /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.runs/synth_2/vivado.jou
-# Running On: xsjl23630, OS: Linux, CPU Frequency: 2399.780 MHz, CPU Physical cores: 16, Host memory: 101120 MB
+# Running On: xsjlc190434, OS: Linux, CPU Frequency: 3500.000 MHz, CPU Physical cores: 16, Host memory: 270210 MB
 #-----------------------------------------------------------
 source design_2_wrapper.tcl -notrace

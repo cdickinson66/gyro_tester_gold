@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
--- Date        : Fri Apr  1 13:47:44 2022
+-- Date        : Fri Apr  1 13:47:38 2022
 -- Host        : xsjl210013 running 64-bit CentOS Linux release 7.4.1708 (Core)
--- Command     : write_vhdl -force -mode synth_stub
---               /home/cdickins/reuse/gyro_tester_gold-master/gyro_tester_gold/gyro_tester_gold/gyro_tester_gold.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/design_2_smartconnect_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_2_smartconnect_0_0 -prefix
+--               design_2_smartconnect_0_0_ design_2_smartconnect_0_0_stub.vhdl
 -- Design      : design_2_smartconnect_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

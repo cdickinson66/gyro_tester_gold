@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:BiDirChannels:1.0
-// IP Revision: 116
+// IP Revision: 121
 
 `timescale 1ns/1ps
 
@@ -83,11 +83,7 @@ module design_2_BiDirChannels_0_0 (
   s00_axi_rresp,
   s00_axi_rvalid,
   s00_axi_rready,
-  m00_axis_tdata,
-  m00_axis_tstrb,
-  m00_axis_tlast,
-  m00_axis_tvalid,
-  m00_axis_tready,
+  s00_axis_tready,
   s00_axis_tdata,
   s00_axis_tstrb,
   s00_axis_tlast,
@@ -102,7 +98,11 @@ module design_2_BiDirChannels_0_0 (
   s02_axis_tstrb,
   s02_axis_tlast,
   s02_axis_tvalid,
-  s00_axis_tready
+  m00_axis_tvalid,
+  m00_axis_tdata,
+  m00_axis_tstrb,
+  m00_axis_tlast,
+  m00_axis_tready
 );
 
 input wire DRX;
@@ -169,23 +169,15 @@ output wire s00_axi_rvalid;
 m7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *)
 input wire s00_axi_rready;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TDATA" *)
-output wire [15 : 0] m00_axis_tdata;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TSTRB" *)
-output wire [1 : 0] m00_axis_tstrb;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TLAST" *)
-output wire m00_axis_tlast;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TVALID" *)
-output wire m00_axis_tvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXIS, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN design_2_BiDirChannels_0_0_txclk, LAYERED_METADATA undef, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TREADY" *)
-input wire m00_axis_tready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S00_AXIS TREADY" *)
+output wire s00_axis_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S00_AXIS TDATA" *)
 input wire [15 : 0] s00_axis_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S00_AXIS TSTRB" *)
 input wire [1 : 0] s00_axis_tstrb;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S00_AXIS TLAST" *)
 input wire s00_axis_tlast;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXIS, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN design_2_BiDirChannels_0_0_txclk, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S00_AXIS TVALID" *)
 input wire s00_axis_tvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s01_axis TREADY" *)
@@ -210,9 +202,17 @@ input wire s02_axis_tlast;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s02_axis, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN design_2_BiDirChannels_0_0_txclk, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s02_axis TVALID" *)
 input wire s02_axis_tvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXIS, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN design_2_BiDirChannels_0_0_txclk, LAYERED_METADATA undef, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S00_AXIS TREADY" *)
-output wire s00_axis_tready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TVALID" *)
+output wire m00_axis_tvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TDATA" *)
+output wire [15 : 0] m00_axis_tdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TSTRB" *)
+output wire [1 : 0] m00_axis_tstrb;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TLAST" *)
+output wire m00_axis_tlast;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXIS, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 2, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 50000000, PHASE 0.0, CLK_DOMAIN design_2_BiDirChannels_0_0_txclk, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M00_AXIS TREADY" *)
+input wire m00_axis_tready;
 
   BiDirChannels_v1_0 #(
     .C_S00_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
@@ -249,11 +249,7 @@ output wire s00_axis_tready;
     .s00_axi_rresp(s00_axi_rresp),
     .s00_axi_rvalid(s00_axi_rvalid),
     .s00_axi_rready(s00_axi_rready),
-    .m00_axis_tdata(m00_axis_tdata),
-    .m00_axis_tstrb(m00_axis_tstrb),
-    .m00_axis_tlast(m00_axis_tlast),
-    .m00_axis_tvalid(m00_axis_tvalid),
-    .m00_axis_tready(m00_axis_tready),
+    .s00_axis_tready(s00_axis_tready),
     .s00_axis_tdata(s00_axis_tdata),
     .s00_axis_tstrb(s00_axis_tstrb),
     .s00_axis_tlast(s00_axis_tlast),
@@ -268,6 +264,10 @@ output wire s00_axis_tready;
     .s02_axis_tstrb(s02_axis_tstrb),
     .s02_axis_tlast(s02_axis_tlast),
     .s02_axis_tvalid(s02_axis_tvalid),
-    .s00_axis_tready(s00_axis_tready)
+    .m00_axis_tvalid(m00_axis_tvalid),
+    .m00_axis_tdata(m00_axis_tdata),
+    .m00_axis_tstrb(m00_axis_tstrb),
+    .m00_axis_tlast(m00_axis_tlast),
+    .m00_axis_tready(m00_axis_tready)
   );
 endmodule
